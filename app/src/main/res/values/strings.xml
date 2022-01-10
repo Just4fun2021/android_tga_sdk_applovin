@@ -1,0 +1,14 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">SDK</string>
+    <string name="facebook_app_id">503651173800345</string>
+    <!--    广告相关-->
+    <string name="facebook_id">503651173800345_658237148341746</string>
+    <string name="vungle_app_id">5faa69c270ffef6d68aa83eb</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="packagename">包名不一致</string>
+    <string name="sdkiniterror">sdk初始化失败</string>
+    <string name="payerror">订单异常,请联系客服</string>
+</resources>
