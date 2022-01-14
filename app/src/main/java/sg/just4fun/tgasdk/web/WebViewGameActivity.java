@@ -124,7 +124,17 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
             tv_stuasbar.setBackgroundColor(Color.parseColor(statusaBarColor));
         }else {
             if (yssdk==1){
-                statusaBarColor="#04a7e8";
+                if (TgaSdk.appCode!=null&&!TgaSdk.appCode.equals("")){
+                    if (TgaSdk.appCode.equals("khalaspay")){
+                        statusaBarColor="#12172a";
+                    }else if (TgaSdk.appCode.equals("bip")){
+                        statusaBarColor="#00B1E9";
+                    }else {
+                        statusaBarColor="#04a7e8";
+                    }
+                }else {
+                    statusaBarColor="#04a7e8";
+                }
             }else {
                 statusaBarColor="#23D3BE";
             }

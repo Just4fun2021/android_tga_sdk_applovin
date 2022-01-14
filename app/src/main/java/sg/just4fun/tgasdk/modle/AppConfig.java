@@ -11,16 +11,27 @@ public class AppConfig implements TgaSdkJsonEntity {
     private List<PayConfigBean> payMentList;
     private ShareBean share;
     private String gameCentreUrl;
+    private String appCode;
     private String appId;
 
 
-    public AppConfig(List<AdConfigBean> ad, List<PayConfigBean> payMentList, ShareBean share, String gameCentreUrl, String appId){
+    public AppConfig(List<AdConfigBean> ad, List<PayConfigBean> payMentList, ShareBean share, String gameCentreUrl, String appId,String appCode){
         this.ad=ad;
         this.payMentList=payMentList;
         this.share=share;
         this. gameCentreUrl=gameCentreUrl;
         this. appId=appId;
+        this. appCode=appCode;
     }
+
+    public String getAppCode() {
+        return appCode;
+    }
+
+    public void setAppCode(String appCode) {
+        this.appCode = appCode;
+    }
+
     public String getAppId() {
         return appId;
     }
