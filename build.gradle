@@ -3,7 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        jcenter()
+
 //        maven { url'https://applovin.bintray.com/Quality-Service' }
         maven { url 'https://artifacts.applovin.com/android' }
     }
@@ -19,7 +19,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        mavenLocal()
         maven { url 'https://jitpack.io' }
         flatDir {
             dirs 'libs'
