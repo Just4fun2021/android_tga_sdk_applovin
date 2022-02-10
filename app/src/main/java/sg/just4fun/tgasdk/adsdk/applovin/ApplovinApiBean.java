@@ -274,7 +274,6 @@ public class ApplovinApiBean  implements TgaApiBean{
         AppLovinSdk appLovinSdk = AppLovinSdk.getInstance( context );
         appLovinSdk.setMediationProvider( "max" );
         appLovinSdk.getSettings().setVerboseLogging(true);
-
         AppLovinSdk.initializeSdk( context, configuration -> {
             // AppLovin SDK is initialized, start loading ads
             appLovinSdkConfiguration = configuration;

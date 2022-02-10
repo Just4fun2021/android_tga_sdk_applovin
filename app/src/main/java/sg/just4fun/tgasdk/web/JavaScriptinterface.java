@@ -26,6 +26,7 @@ import androidx.annotation.RequiresApi;
 //import com.android.billingclient.api.SkuDetailsResponseListener;
 //import com.facebook.ads.InterstitialAd;
 //import com.facebook.login.LoginManager;
+import com.applovin.sdk.AppLovinSdk;
 import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
@@ -136,6 +137,7 @@ public class JavaScriptinterface{
                     Log.e("apploving初始化","apploving初始化");
                     apploving = new ApplovinApiBean(context, webview, tgaUrl);
                     apploving.initSdk();
+                    AppLovinSdk.getInstance( context ).getSettings().setVerboseLogging( true );
                 }
             } catch(Exception e) {
                 Log.e("tgasdk-js", "Apploving Init Error", e);

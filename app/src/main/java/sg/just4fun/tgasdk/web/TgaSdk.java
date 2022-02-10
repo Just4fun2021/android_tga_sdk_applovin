@@ -68,6 +68,15 @@ public class TgaSdk {
     public static String rebipToken;
     public static TGACallback.GameCenterCallback gameCenterCallback;
     public static String appCode;
+    public static String txnid="";
+    public static String msisid="";
+    public static String env;
+    private static String infoUrl;
+    private static String googlepayUrl;
+    private static String gamelistUrl;
+    private static String loginsdkUrl;
+    private static String userinfoUrl;
+    private static String theme1;
 
     private TgaSdk() {
 
@@ -79,8 +88,17 @@ public class TgaSdk {
             return text;
         }
     }
+
+
+
     //TGASDK初始化方法
     public static void init(Context context,String appKey,String schemeUrl,String appPaymentKey,TGACallback.TgaEventListener listener,TGACallback.initCallback initCallback) {
+        init(context,"",appKey,schemeUrl,appPaymentKey,listener,initCallback);
+    }
+
+    //TGASDK初始化方法
+    public static void init(Context context,String env,String appKey,String schemeUrl,String appPaymentKey,TGACallback.TgaEventListener listener,TGACallback.initCallback initCallback) {
+        TgaSdk.env=env;
         mContext = context.getApplicationContext();
         TgaSdk.appKey= appKey;
         TgaSdk.schemeUrl= schemeUrl;
@@ -90,9 +108,19 @@ public class TgaSdk {
         Log.e(TGA,"linitCallback是不是空了="+initCallback);
         TgaSdk.appPaymentKey = appPaymentKey;
         Log.e(TGA,"appPaymentKey是不是空了="+appPaymentKey);
+//        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+//            @Override
+//            public void onInitializationComplete(InitializationStatus initializationStatus) {
+//                Gson gson = new Gson();
+//                String s = gson.toJson(initializationStatus);
+//                Log.e(TGA,"谷歌广告初始化="+ s);
+//            }
+//        });
 //       获取用户配置表
         getUserInfo(appKey);
     }
+
+
     // TGASDK拉取google支付配置
     private static void getGooglePayInfo(String appId) {
         JSONObject jsonObject = new JSONObject();
@@ -105,7 +133,12 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<HttpBaseResult<GooglePayInfoBean>>post(AppUrl.GET_GOOGLEPAY_INFO)
+        if(env.equals("bip")){
+            googlepayUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO;
+        }else {
+            googlepayUrl= AppUrl.GET_GOOGLEPAY_INFO;
+        }
+        OkGo.<HttpBaseResult<GooglePayInfoBean>>post(googlepayUrl)
                 .tag(mContext)
                 .upRequestBody(body)
                 .execute(new JsonCallback<HttpBaseResult<GooglePayInfoBean>>(mContext) {
@@ -125,6 +158,7 @@ public class TgaSdk {
     // TGASDK获取游戏token
     private static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson){
         String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
+
         String data="{}";
         JSONObject jsonObject = new JSONObject();
         try {
@@ -140,7 +174,12 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<HttpBaseResult<BipGameUserInfo>>post(AppUrl.GAME_BIP_CODE_SDK_USER_INFO)
+        if(TgaSdk.env.equals("bip")){
+            userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
+        }else {
+            userinfoUrl= AppUrl.GAME_BIP_CODE_SDK_USER_INFO;
+        }
+        OkGo.<HttpBaseResult<BipGameUserInfo>>post(userinfoUrl)
                 .tag(mContext)
                 .headers("appId",appId)
                 .upRequestBody(body)
@@ -247,7 +286,12 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<HttpBaseResult<BipGameUserInfo>>post(AppUrl.GAME_BIP_LOGIN_SDK)
+        if(TgaSdk.env.equals("bip")){
+            loginsdkUrl= AppUrl.BIP_GAME_BIP_LOGIN_SDK;
+        }else {
+            loginsdkUrl= AppUrl.GAME_BIP_LOGIN_SDK;
+        }
+        OkGo.<HttpBaseResult<BipGameUserInfo>>post(loginsdkUrl)
                 .tag(mContext)
                 .upRequestBody(body)
                 .execute(new JsonCallback<HttpBaseResult<BipGameUserInfo>>(mContext) {
@@ -303,7 +347,13 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<HttpBaseResult<GameListInfoBean>>post(AppUrl.GET_GAME_LIST)
+
+        if(TgaSdk.env.equals("bip")){
+            gamelistUrl= AppUrl.BIP_GET_GAME_LIST;
+        }else {
+            gamelistUrl= AppUrl.GET_GAME_LIST;
+        }
+        OkGo.<HttpBaseResult<GameListInfoBean>>post(gamelistUrl)
                 .tag(mContext)
                 .headers("Authorization",accessToken)//
                 .headers("appId",appId)//
@@ -340,16 +390,24 @@ public class TgaSdk {
                     }
                 });
     }
+
     public static Context getContext() {
         return mContext;
     }
+
     //进入TGAsdk游戏中心方法
-    public static void goPage(Context context, String url, boolean autoToken, String schemeQuery, boolean navigationbar) {
+    public static void goPage(Context context, String theme,String url, boolean autoToken, String schemeQuery, boolean navigationbar) {
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
 //
 //                String yhAppId = SpUtils.getString(mContext, "yhAppId", "");
+
+        if (theme==null||theme.equals("")){
+            theme1=appCode;
+        }else {
+            theme1=theme;
+        }
         String bipHeader = SpUtils.getString(mContext, "bipHeader", "");
         String bipName = SpUtils.getString(mContext, "bipName", "");
         String bipTxnId = SpUtils.getString(mContext, "bipTxnId", "");
@@ -365,7 +423,7 @@ public class TgaSdk {
                     if(bipToken==null||bipToken.equals("")){
                         Log.e(TGA,"bipToken="+bipToken);
 //                                  "&txnId=1&msisdn=1"+
-                        url= TgaSdk.gameCentreUrl+"?appId="+TgaSdk.appId+"&theme="+appCode+"&navigationbar="+navigationbar+"&token="+bipToken+"&refresh-token="+reBipToken;//无底部
+                        url= TgaSdk.gameCentreUrl+"?appId="+TgaSdk.appId+"&theme="+theme1+"&navigationbar="+navigationbar+"&token="+bipToken+"&refresh-token="+reBipToken;//无底部
                         Intent intent = new Intent(context, HomeActivity.class);
                         intent.putExtra("url",url);
                         intent.putExtra("gopag",0);
@@ -381,10 +439,19 @@ public class TgaSdk {
                             TgaSdk.gameCentreUrl= Global.TEST_MOREN;
                         }
                         Log.e("rebipToken没有","rebipToken=="+reBipToken);
-                        if (schemeQuery!=null&&!schemeQuery.equals("")){
-                            url= TgaSdk.gameCentreUrl+ "?txnId="+ bipTxnId+"&theme="+appCode+"&"+schemeQuery+"&navigationbar="+navigationbar+"&appId="+ TgaSdk.appId+"&nickname="+bipName+"&msisdn="+bipTxnId+"&token="+bipToken+"&refresh-token="+reBipToken+"&appversion="+version+"&avatar="+bipHeader;//无底部
+
+                        if (bipTxnId!=null&&!bipTxnId.equals("")){
+                            txnid= "txnId="+ bipTxnId;
+                            msisid="&msisdn="+bipTxnId;
                         }else {
-                            url= TgaSdk.gameCentreUrl+ "?txnId="+ bipTxnId+"&theme="+appCode+"&appId="+ TgaSdk.appId+"&navigationbar="+navigationbar+"&nickname="+bipName+"&token="+bipToken+"&refresh-token="+reBipToken+"&msisdn="+bipTxnId+"&appversion="+version+"&avatar="+bipHeader;//无底部
+                            txnid="";
+                            msisid="";
+                        }
+
+                        if (schemeQuery!=null&&!schemeQuery.equals("")){
+                            url= TgaSdk.gameCentreUrl+ "?"+txnid+"&theme="+theme1+"&"+schemeQuery+"&navigationbar="+navigationbar+"&appId="+ TgaSdk.appId+"&nickname="+bipName+msisid+"&token="+bipToken+"&refresh-token="+reBipToken+"&appversion="+version+"&avatar="+bipHeader;//无底部
+                        }else {
+                            url= TgaSdk.gameCentreUrl+ "?"+txnid+"&theme="+theme1+"&appId="+ TgaSdk.appId+"&navigationbar="+navigationbar+"&nickname="+bipName+"&token="+bipToken+"&refresh-token="+reBipToken+msisid+"&appversion="+version+"&avatar="+bipHeader;//无底部
                         }
                         Intent intent = new Intent(context, HomeActivity.class);
                         intent.putExtra("url",url);
@@ -433,17 +500,17 @@ public class TgaSdk {
         return "";
     }
     //跳转游戏中心
-    public static void goPage(Context context,String url,String gameid,boolean navigationbar) {
-        goPage(context, url, true,gameid,navigationbar);
+    public static void goPage(Context context,String theme,String url,String gameid,boolean navigationbar) {
+        goPage(context,theme, url, true,gameid,navigationbar);
     }
     //跳转游戏中心
-    public static void openGameCenter(Context context, boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback) {
+    public static void openGameCenter(Context context, String theme,boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback) {
         TgaSdk.gameCenterCallback=gameCenterCallback;
-        goPage(context, "",true,"",navigationbar);
+        goPage(context, theme,"",true,"",navigationbar);
     }
     //跳转游戏中心
     public static void goLink(Context context,String url,boolean navigationbar) {
-        goPage(context, url,true,"",navigationbar);
+        goPage(context,"", url,true,"",navigationbar);
     }
     public static void shareSuccess(String uuid) {
         shared(uuid, true);
@@ -467,9 +534,7 @@ public class TgaSdk {
             TGACallback.outLoginCallback.outLoginCall();
         }
 
-
     }
-
 
     public static void lang(String lang) {
         if (TGACallback.langListener!=null){
@@ -477,18 +542,16 @@ public class TgaSdk {
         }
     }
 
-
     public static void shared(String uuid, int successCount) {
         shared(uuid, successCount > 0);
     }
+
     public static String requireNotBlankString(String value) {
         if(value == null || value.trim().equals("")) {
             return null;
         }
         return value;
     }
-
-
 
     //拉取SDK配置表
     public static void getUserInfo(String appKe){
@@ -502,7 +565,12 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<String>post(AppUrl.TGA_SDK_INFO)
+        if(env.equals("bip")){
+            infoUrl= AppUrl.BIP_TGA_SDK_INFO;
+        }else {
+            infoUrl= AppUrl.TGA_SDK_INFO;
+        }
+        OkGo.<String>post(infoUrl)
                 .tag(mContext)
                 .upRequestBody(body)
                 .execute(new JsonCallback<String>(mContext) {
@@ -564,12 +632,12 @@ public class TgaSdk {
         if (schemeUri!=null||!schemeUri.equals("")){
             try{
                 String query = schemeUri.getQuery();
-                goPage(mContext, "",true,query,navigationbar);
+                goPage(mContext, "","",true,query,navigationbar);
             }catch (Exception e){
                 initCallback.initError("schemeUri存在异常");
             }
         }else {
-            goPage(mContext,"",null,navigationbar);
+            goPage(mContext,"","",null,navigationbar);
         }
     }
 
@@ -590,8 +658,5 @@ public class TgaSdk {
         }
         return "获取错误";
     }
-
-
-
 
 }
