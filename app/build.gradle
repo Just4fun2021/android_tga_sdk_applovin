@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-//    id 'maven-publish'//jitpcak平台发布arr包
+    id 'maven-publish'//jitpcak平台发布arr包
 }
 
 android {
@@ -18,7 +18,15 @@ android {
 //            }
 //        }
 //    }
-
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+            }
+        }
+        repositories {
+            mavenLocal()
+        }
+    }
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 28
