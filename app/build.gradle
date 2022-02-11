@@ -1,9 +1,9 @@
-// build JAR file
 plugins {
     id 'com.android.library'
-    id 'com.github.dcendents.android-maven'//jitpcak平台发布arr包
+    id 'com.github.dcendents.android-maven'//jitpcak平台发布arr包z
 }
-group = 'com.github.Just4fun2021'
+group='com.github.Just4fun2021'
+
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.1"
