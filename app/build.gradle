@@ -14,7 +14,7 @@ android {
                 // 这里头是artifacts的配置信息，不填会采用默认的
                 groupId = 'com.github.Just4fun2021'//这个不能动
                 artifactId = 'android_tga_sdk_applovin'//这个也不能动
-                version = '1.1.1'//发布一个新版本  这里的版本号就要改成对应的版本号
+                version = '1.1.2'//发布一个新版本  这里的版本号就要改成对应的版本号
             }
         }
     }
