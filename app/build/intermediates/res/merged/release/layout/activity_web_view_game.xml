@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relayout_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".web.WebViewGameActivity">
+<!--<FrameLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--<RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rlayout_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tv_stuasbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+<RelativeLayout
+    android:layout_below="@+id/tv_stuasbar"
+    android:id="@+id/relayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/image_black"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/new_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/tv_webtitle"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:enabled="true"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+    <sg.just4fun.tgasdk.web.LollipopFixedWebView
+        android:layout_below="@+id/relayout"
+        android:id="@+id/add_view1"
+        android:layerType="hardware"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/img_loading"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/gif"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+<!--</RelativeLayout>-->
+
+<!--  <RelativeLayout-->
+<!--      android:background="#ffffff"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="match_parent">-->
+
+<!--      <sg.just4fun.tgasdk.web.LollipopFixedWebView-->
+<!--          android:layerType="hardware"-->
+<!--          android:id="@+id/banner_web"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="match_parent"/>-->
+
+
+
+<!--  </RelativeLayout>-->
+
+<!--</FrameLayout>-->
+</RelativeLayout>

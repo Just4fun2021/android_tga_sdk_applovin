@@ -1,0 +1,271 @@
+sg/just4fun/tgasdk/tga/mvp/MvpView.java
+ sg.just4fun.tgasdk.tga.mvp.MvpView
+sg/just4fun/tgasdk/adsdk/applovin/ApplovinBannerAdJob.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinBannerAdJob
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinBannerAdJob$1
+sg/just4fun/tgasdk/tga/view/promptlibrary/PromptDialog.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog$1
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog$2
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog$3
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog$4
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptDialog$5
+sg/just4fun/tgasdk/tga/view/textCh/LinkMovementMethod.java
+ sg.just4fun.tgasdk.tga.view.textCh.LinkMovementMethod
+sg/just4fun/tgasdk/modle/EncryptStrBean.java
+ sg.just4fun.tgasdk.modle.EncryptStrBean
+sg/just4fun/tgasdk/tga/view/promptlibrary/PromptButtonListener.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptButtonListener
+sg/just4fun/tgasdk/tga/view/immersionbar/ImmersionOwner.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionOwner
+sg/just4fun/tgasdk/adsdk/TgaAdSdkUtils.java
+ sg.just4fun.tgasdk.adsdk.TgaAdSdkUtils
+ sg.just4fun.tgasdk.adsdk.TgaAdSdkUtils$ScriptCodeRunnable
+sg/just4fun/tgasdk/web/goPage/GoPageInfo.java
+ sg.just4fun.tgasdk.web.goPage.GoPageInfo
+sg/just4fun/tgasdk/modle/GameNameDataTitle.java
+ sg.just4fun.tgasdk.modle.GameNameDataTitle
+sg/just4fun/tgasdk/tga/ui/my/fragment/MyFragment.java
+ sg.just4fun.tgasdk.tga.ui.my.fragment.MyFragment
+ sg.just4fun.tgasdk.tga.ui.my.fragment.MyFragment$1
+ sg.just4fun.tgasdk.tga.ui.my.fragment.MyFragment$2
+sg/just4fun/tgasdk/tga/ui/home/model/MainBean.java
+ sg.just4fun.tgasdk.tga.ui.home.model.MainBean
+ sg.just4fun.tgasdk.tga.ui.home.model.MainBean$UserBean
+sg/just4fun/tgasdk/tga/base/BaseFragment.java
+ sg.just4fun.tgasdk.tga.base.BaseFragment
+sg/just4fun/tgasdk/modle/ShareConfigBean.java
+ sg.just4fun.tgasdk.modle.ShareConfigBean
+sg/just4fun/tgasdk/callback/TGACallback.java
+ sg.just4fun.tgasdk.callback.TGACallback
+ sg.just4fun.tgasdk.callback.TGACallback$CodeCallback
+ sg.just4fun.tgasdk.callback.TGACallback$FightGameCallback
+ sg.just4fun.tgasdk.callback.TGACallback$GameCenterCallback
+ sg.just4fun.tgasdk.callback.TGACallback$LangCallback
+ sg.just4fun.tgasdk.callback.TGACallback$OutLoginCallback
+ sg.just4fun.tgasdk.callback.TGACallback$ShareCallback
+ sg.just4fun.tgasdk.callback.TGACallback$TgaEventListener
+ sg.just4fun.tgasdk.callback.TGACallback$initCallback
+sg/just4fun/tgasdk/adsdk/applovin/ApplovingAdPlacementType.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdPlacementType
+sg/just4fun/tgasdk/tga/view/immersionbar/SimpleImmersionProxy.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.SimpleImmersionProxy
+sg/just4fun/tgasdk/modle/GameinfoBean.java
+ sg.just4fun.tgasdk.modle.GameinfoBean
+sg/just4fun/tgasdk/tga/base/SimpleResponse.java
+ sg.just4fun.tgasdk.tga.base.SimpleResponse
+sg/just4fun/tgasdk/modle/AdConfigBean.java
+ sg.just4fun.tgasdk.modle.AdConfigBean
+sg/just4fun/tgasdk/modle/GameListInfoBean.java
+ sg.just4fun.tgasdk.modle.GameListInfoBean
+sg/just4fun/tgasdk/tga/utils/ToastUtil.java
+ sg.just4fun.tgasdk.tga.utils.ToastUtil
+sg/just4fun/tgasdk/BuildConfig.java
+ sg.just4fun.tgasdk.BuildConfig
+sg/just4fun/tgasdk/tga/view/immersionbar/BarConfig.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.BarConfig
+sg/just4fun/tgasdk/web/SdkX5WebView.java
+ sg.just4fun.tgasdk.web.SdkX5WebView
+ sg.just4fun.tgasdk.web.SdkX5WebView$1
+sg/just4fun/tgasdk/tga/view/promptlibrary/OnAdClickListener.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.OnAdClickListener
+sg/just4fun/tgasdk/tga/view/KeyboardStateObserver.java
+ sg.just4fun.tgasdk.tga.view.KeyboardStateObserver
+ sg.just4fun.tgasdk.tga.view.KeyboardStateObserver$1
+ sg.just4fun.tgasdk.tga.view.KeyboardStateObserver$OnKeyboardVisibilityListener
+sg/just4fun/tgasdk/conctart/SdkActivityDele.java
+ sg.just4fun.tgasdk.conctart.SdkActivityDele
+sg/just4fun/tgasdk/modle/PriceBean.java
+ sg.just4fun.tgasdk.modle.PriceBean
+sg/just4fun/tgasdk/tga/view/immersionbar/ImmersionProxy.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionProxy
+sg/just4fun/tgasdk/adsdk/applovin/ApplovinApiBean.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$1
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$2
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$3
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$4
+sg/just4fun/tgasdk/tga/utils/ScreenUtils.java
+ sg.just4fun.tgasdk.tga.utils.ScreenUtils
+sg/just4fun/tgasdk/tga/view/textCh/LinkClickListener.java
+ sg.just4fun.tgasdk.tga.view.textCh.LinkClickListener
+sg/just4fun/tgasdk/adsdk/TgaEventBaseInfo.java
+ sg.just4fun.tgasdk.adsdk.TgaEventBaseInfo
+sg/just4fun/tgasdk/modle/AppConfig.java
+ sg.just4fun.tgasdk.modle.AppConfig
+sg/just4fun/tgasdk/tga/base/HttpBaseResult.java
+ sg.just4fun.tgasdk.tga.base.HttpBaseResult
+sg/just4fun/tgasdk/tga/mvp/MvpPresenter.java
+ sg.just4fun.tgasdk.tga.mvp.MvpPresenter
+sg/just4fun/tgasdk/tga/view/textCh/LinkMovementMethodEx.java
+ sg.just4fun.tgasdk.tga.view.textCh.LinkMovementMethodEx
+sg/just4fun/tgasdk/tga/view/immersionbar/SimpleImmersionFragment.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.SimpleImmersionFragment
+sg/just4fun/tgasdk/tga/view/promptlibrary/PromptView.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView$1
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView$2
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView$3
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView$4
+sg/just4fun/tgasdk/adsdk/TgaAdType.java
+ sg.just4fun.tgasdk.adsdk.TgaAdType
+sg/just4fun/tgasdk/tga/view/immersionbar/OnKeyboardListener.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.OnKeyboardListener
+sg/just4fun/tgasdk/tga/base/JsonConvertor.java
+ sg.just4fun.tgasdk.tga.base.JsonConvertor
+sg/just4fun/tgasdk/tpsdk/TgaTpBean.java
+ sg.just4fun.tgasdk.tpsdk.TgaTpBean
+sg/just4fun/tgasdk/adsdk/applovin/ApplovingAdErrorEvent.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdErrorEvent
+sg/just4fun/tgasdk/adsdk/applovin/ApplovingAdUnit.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdUnit
+sg/just4fun/tgasdk/conctart/Conctant.java
+ sg.just4fun.tgasdk.conctart.Conctant
+sg/just4fun/tgasdk/tga/ui/home/HomeActivity.java
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity$1
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity$2
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity$3
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity$4
+sg/just4fun/tgasdk/tga/view/immersionbar/FlymeOSStatusBarFontUtils.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.FlymeOSStatusBarFontUtils
+sg/just4fun/tgasdk/tga/ui/my/fragment/MyJavaScripface.java
+ sg.just4fun.tgasdk.tga.ui.my.fragment.MyJavaScripface
+sg/just4fun/tgasdk/tga/view/NoScrollViewPager.java
+ sg.just4fun.tgasdk.tga.view.NoScrollViewPager
+sg/just4fun/tgasdk/adsdk/TgaAdSdkEventData.java
+ sg.just4fun.tgasdk.adsdk.TgaAdSdkEventData
+sg/just4fun/tgasdk/modle/BipGameUserInfo.java
+ sg.just4fun.tgasdk.modle.BipGameUserInfo
+sg/just4fun/tgasdk/tga/global/AppUrl.java
+ sg.just4fun.tgasdk.tga.global.AppUrl
+sg/just4fun/tgasdk/web/WebViewGameActivity.java
+ sg.just4fun.tgasdk.web.WebViewGameActivity
+ sg.just4fun.tgasdk.web.WebViewGameActivity$1
+ sg.just4fun.tgasdk.web.WebViewGameActivity$2
+ sg.just4fun.tgasdk.web.WebViewGameActivity$3
+ sg.just4fun.tgasdk.web.WebViewGameActivity$4
+ sg.just4fun.tgasdk.web.WebViewGameActivity$5
+sg/just4fun/tgasdk/tga/base/JsonConvert.java
+ sg.just4fun.tgasdk.tga.base.JsonConvert
+sg/just4fun/tgasdk/web/banner/AppLovinAdPlacementConfig.java
+ sg.just4fun.tgasdk.web.banner.AppLovinAdPlacementConfig
+sg/just4fun/tgasdk/tga/ui/home/model/RegisterBean.java
+ sg.just4fun.tgasdk.tga.ui.home.model.RegisterBean
+ sg.just4fun.tgasdk.tga.ui.home.model.RegisterBean$UserInfo
+sg/just4fun/tgasdk/tga/base/JsonCallback.java
+ sg.just4fun.tgasdk.tga.base.JsonCallback
+sg/just4fun/tgasdk/web/goPage/GoPageUtils.java
+ sg.just4fun.tgasdk.web.goPage.GoPageUtils
+ sg.just4fun.tgasdk.web.goPage.GoPageUtils$ScriptCodeRunnable
+sg/just4fun/tgasdk/modle/PayConfigBean.java
+ sg.just4fun.tgasdk.modle.PayConfigBean
+sg/just4fun/tgasdk/adsdk/TgaSdkException.java
+ sg.just4fun.tgasdk.adsdk.TgaSdkException
+sg/just4fun/tgasdk/tga/global/Global.java
+ sg.just4fun.tgasdk.tga.global.Global
+sg/just4fun/tgasdk/tga/view/MyWebView.java
+ sg.just4fun.tgasdk.tga.view.MyWebView
+ sg.just4fun.tgasdk.tga.view.MyWebView$1
+sg/just4fun/tgasdk/tga/mvp/MvpFragment.java
+ sg.just4fun.tgasdk.tga.mvp.MvpFragment
+sg/just4fun/tgasdk/tga/view/textCh/NoUnderlineSpan.java
+ sg.just4fun.tgasdk.tga.view.textCh.NoUnderlineSpan
+sg/just4fun/tgasdk/modle/ShareBean.java
+ sg.just4fun.tgasdk.modle.ShareBean
+sg/just4fun/tgasdk/web/JavaScriptinterface.java
+ sg.just4fun.tgasdk.web.JavaScriptinterface
+ sg.just4fun.tgasdk.web.JavaScriptinterface$1
+sg/just4fun/tgasdk/adsdk/applovin/ApplovinAdLoadCallback.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinAdLoadCallback
+sg/just4fun/tgasdk/tga/view/promptlibrary/PromptButton.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.PromptButton
+sg/just4fun/tgasdk/tga/view/immersionbar/OSUtils.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.OSUtils
+sg/just4fun/tgasdk/adsdk/TgaJsonSample.java
+ sg.just4fun.tgasdk.adsdk.TgaJsonSample
+sg/just4fun/tgasdk/web/Conctart.java
+ sg.just4fun.tgasdk.web.Conctart
+sg/just4fun/tgasdk/web/TgaSdk.java
+ sg.just4fun.tgasdk.web.TgaSdk
+ sg.just4fun.tgasdk.web.TgaSdk$1
+ sg.just4fun.tgasdk.web.TgaSdk$2
+ sg.just4fun.tgasdk.web.TgaSdk$3
+ sg.just4fun.tgasdk.web.TgaSdk$4
+ sg.just4fun.tgasdk.web.TgaSdk$5
+sg/just4fun/tgasdk/web/banner/AdConfigUtlis.java
+ sg.just4fun.tgasdk.web.banner.AdConfigUtlis
+ sg.just4fun.tgasdk.web.banner.AdConfigUtlis$ScriptCodeRunnable
+sg/just4fun/tgasdk/modle/BipGameUserUser.java
+ sg.just4fun.tgasdk.modle.BipGameUserUser
+sg/just4fun/tgasdk/tga/view/immersionbar/BarParams.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.BarParams
+sg/just4fun/tgasdk/tga/utils/OSUtil.java
+ sg.just4fun.tgasdk.tga.utils.OSUtil
+ sg.just4fun.tgasdk.tga.utils.OSUtil$BuildProperties
+sg/just4fun/tgasdk/modle/UserInFoBean.java
+ sg.just4fun.tgasdk.modle.UserInFoBean
+sg/just4fun/tgasdk/tga/view/CustomSpannableString.java
+ sg.just4fun.tgasdk.tga.view.CustomSpannableString
+sg/just4fun/tgasdk/tga/utils/SpUtils.java
+ sg.just4fun.tgasdk.tga.utils.SpUtils
+ sg.just4fun.tgasdk.tga.utils.SpUtils$1
+sg/just4fun/tgasdk/tga/utils/AppUtils.java
+ sg.just4fun.tgasdk.tga.utils.AppUtils
+sg/just4fun/tgasdk/web/login/LoginCallblackInfo.java
+ sg.just4fun.tgasdk.web.login.LoginCallblackInfo
+sg/just4fun/tgasdk/tga/view/immersionbar/SimpleImmersionOwner.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.SimpleImmersionOwner
+sg/just4fun/tgasdk/adsdk/TgaSdkEventDataBean.java
+ sg.just4fun.tgasdk.adsdk.TgaSdkEventDataBean
+sg/just4fun/tgasdk/tga/view/immersionbar/ImmersionFragment.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionFragment
+sg/just4fun/tgasdk/web/LollipopFixedWebView.java
+ sg.just4fun.tgasdk.web.LollipopFixedWebView
+sg/just4fun/tgasdk/tga/utils/Convert.java
+ sg.just4fun.tgasdk.tga.utils.Convert
+ sg.just4fun.tgasdk.tga.utils.Convert$GsonHolder
+sg/just4fun/tgasdk/web/login/LoginUtils.java
+ sg.just4fun.tgasdk.web.login.LoginUtils
+ sg.just4fun.tgasdk.web.login.LoginUtils$ScriptCodeRunnable
+sg/just4fun/tgasdk/adsdk/TgaSdkEmptyJsonEntity.java
+ sg.just4fun.tgasdk.adsdk.TgaSdkEmptyJsonEntity
+sg/just4fun/tgasdk/adsdk/applovin/ApplovingAdJob.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob$1
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob$2
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob$3
+sg/just4fun/tgasdk/adsdk/applovin/ApplovingAdInfo.java
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdInfo
+sg/just4fun/tgasdk/tga/utils/SharedPreferencesUtil.java
+ sg.just4fun.tgasdk.tga.utils.SharedPreferencesUtil
+sg/just4fun/tgasdk/adsdk/TgaApiBean.java
+ sg.just4fun.tgasdk.adsdk.TgaApiBean
+sg/just4fun/tgasdk/tga/view/immersionbar/NotchUtils.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.NotchUtils
+sg/just4fun/tgasdk/tga/view/immersionbar/FitsKeyboard.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.FitsKeyboard
+sg/just4fun/tgasdk/modle/GooglePayInfo.java
+ sg.just4fun.tgasdk.modle.GooglePayInfo
+sg/just4fun/tgasdk/tga/view/promptlibrary/Builder.java
+ sg.just4fun.tgasdk.tga.view.promptlibrary.Builder
+sg/just4fun/tgasdk/tga/ui/home/fragment/HomeFragment.java
+ sg.just4fun.tgasdk.tga.ui.home.fragment.HomeFragment
+ sg.just4fun.tgasdk.tga.ui.home.fragment.HomeFragment$1
+ sg.just4fun.tgasdk.tga.ui.home.fragment.HomeFragment$2
+sg/just4fun/tgasdk/adsdk/TgaSdkJsonEntity.java
+ sg.just4fun.tgasdk.adsdk.TgaSdkJsonEntity
+sg/just4fun/tgasdk/tga/view/immersionbar/ImmersionBar.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$1
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$2
+ sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$3
+sg/just4fun/tgasdk/modle/GooglePayInfoBean.java
+ sg.just4fun.tgasdk.modle.GooglePayInfoBean
+sg/just4fun/tgasdk/tga/ui/home/model/TgaSdkUserInFo.java
+ sg.just4fun.tgasdk.tga.ui.home.model.TgaSdkUserInFo
+sg/just4fun/tgasdk/web/goPage/StatusaAndNavigationModel.java
+ sg.just4fun.tgasdk.web.goPage.StatusaAndNavigationModel
+ sg.just4fun.tgasdk.web.goPage.StatusaAndNavigationModel$NavigationBarModel
+sg/just4fun/tgasdk/tga/view/immersionbar/BarHide.java
+ sg.just4fun.tgasdk.tga.view.immersionbar.BarHide

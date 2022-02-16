@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\xml\\network_security_config.xml",
+        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\xml\\file_paths.xml",
+        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\xml\\file_paths.xml"
+    }
+]

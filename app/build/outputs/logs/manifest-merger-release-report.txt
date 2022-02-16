@@ -1,0 +1,73 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:4:5-33
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:6:22-64
+application
+ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:8:5-26:19
+	android:supportsRtl
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:11:9-35
+	android:hardwareAccelerated
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:9:9-35
+	android:usesCleartextTraffic
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:12:9-44
+activity#sg.just4fun.tgasdk.tga.ui.home.HomeActivity
+ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:screenOrientation
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:16:13-49
+	android:windowSoftInputMode
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:17:13-86
+	android:configChanges
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:15:13-74
+	android:name
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:14:19-59
+activity#sg.just4fun.tgasdk.web.WebViewGameActivity
+ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:21:9-25:89
+	android:screenOrientation
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:24:13-49
+	android:windowSoftInputMode
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:25:13-86
+	android:configChanges
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:23:13-74
+	android:name
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:22:13-52
+uses-sdk
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		ADDED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
+		INJECTED from F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
