@@ -31,6 +31,8 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 import com.smarx.notchlib.NotchScreenManager;
@@ -470,22 +472,39 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        OkGo.<HttpBaseResult<BipGameUserInfo>>post(AppUrl.GAME_BIP_CODE_SDK_USER_INFO)
+//        BipGameUserInfo
+        OkGo.<String>post(AppUrl.GAME_BIP_CODE_SDK_USER_INFO)
                 .tag(context)
                 .headers("appId",TgaSdk.appId)
                 .upRequestBody(body)
-                .execute(new JsonCallback<HttpBaseResult<BipGameUserInfo>>(context) {
+                .execute(new JsonCallback<String>(context) {
                     @Override
-                    public void onSuccess(Response<HttpBaseResult<BipGameUserInfo>> response) {
-                        if (response.body().getStateCode() == 1) {
-                            BipGameUserInfo resultInfo = response.body().getResultInfo();
-                            LoginUtils.codeEvents(add_view,uuid,true,resultInfo.getAccessToken(),resultInfo.getRefreshToken());
-                            Log.e(TGA,"获取1v1游戏列表token"+response.body().getResultInfo().getAccessToken());
+                    public void onSuccess(Response  response) {
+
+                        String s1 = response.body().toString();
+//                        s1="{\"stateCode\":1,\"resultInfo\":{\"totalCount\":0,\"desc\":\"SUCCESS\",\"itemCount\":0}}";
+                        Log.e(TGA,"初始化成功的="+s1);
+                        Gson gson = new GsonBuilder()
+                                .serializeNulls()
+                                .create();
+                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
+                        if (httpBaseResult.getStateCode() == 1) {
+                            String s = gson.toJson(httpBaseResult.getResultInfo());
+                            try {
+                                JSONObject jsonObject1 = new JSONObject(s);
+                                String accessToken = jsonObject1.getString("accessToken");
+                                String refreshToken = jsonObject1.getString("refreshToken");
+                                LoginUtils.codeEvents(add_view,uuid,true,accessToken,refreshToken);
+                                Log.e(TGA,"获取1v1游戏列表token"+accessToken);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
 
                     @Override
-                    public void onError(Response<HttpBaseResult<BipGameUserInfo>> response) {
+                    public void onError(Response response) {
                         Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
                     }
                 });
