@@ -19,7 +19,7 @@ import okhttp3.Response;
  * 创建日期：2016/1/14
  * 描    述：默认将返回的数据解析成需要的Bean,可以是 BaseBean，String，List，Map
  * 修订历史：
- * ================================================
+ * ============================
  */
 public abstract class JsonCallback<T> extends AbsCallback<T> {
 
@@ -47,7 +47,7 @@ public abstract class JsonCallback<T> extends AbsCallback<T> {
         // 使用的设备信息
         // 可以随意添加,也可以什么都不传
         // 还可以在这里对所有的参数进行加密，均在这里实现
-        String s = "Tgasdk/2.0" + new WebView(context).getSettings().getUserAgentString();
+        String s = "TgasdkApplovin/2.0" + new WebView(context).getSettings().getUserAgentString();
         HttpHeaders.setUserAgent(s);
     }
 

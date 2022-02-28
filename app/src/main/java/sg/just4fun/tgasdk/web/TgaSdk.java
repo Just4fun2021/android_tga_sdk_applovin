@@ -78,6 +78,8 @@ public class TgaSdk {
     private static String loginsdkUrl;
     private static String userinfoUrl;
     private static String theme1;
+    private static String theme;
+
     private TgaSdk() {
 
     }
@@ -88,8 +90,6 @@ public class TgaSdk {
             return text;
         }
     }
-
-
 
     //TGASDK初始化方法
     public static void init(Context context,String appKey,String schemeUrl,String appPaymentKey,TGACallback.TgaEventListener listener,TGACallback.initCallback initCallback) {
@@ -108,14 +108,6 @@ public class TgaSdk {
         Log.e(TGA,"linitCallback是不是空了="+initCallback);
         TgaSdk.appPaymentKey = appPaymentKey;
         Log.e(TGA,"appPaymentKey是不是空了="+appPaymentKey);
-//        MobileAds.initialize(context, new OnInitializationCompleteListener() {
-//            @Override
-//            public void onInitializationComplete(InitializationStatus initializationStatus) {
-//                Gson gson = new Gson();
-//                String s = gson.toJson(initializationStatus);
-//                Log.e(TGA,"谷歌广告初始化="+ s);
-//            }
-//        });
 //       获取用户配置表
         getUserInfo(appKey);
     }
@@ -163,12 +155,9 @@ public class TgaSdk {
                                         infoList.add(googlePayInfo);
                                     }
                                 }
-
-
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-
                             Log.e(TGA,"google支付配置="+infoList);
                         }
                     }
@@ -389,7 +378,7 @@ public class TgaSdk {
         }else {
             gamelistUrl= AppUrl.GET_GAME_LIST;
         }
-//        GameListInfoBean
+//
         OkGo.<String>post(gamelistUrl)
                 .tag(mContext)
                 .headers("Authorization",accessToken)//
@@ -461,13 +450,12 @@ public class TgaSdk {
     }
 
     //进入TGAsdk游戏中心方法
-    public static void goPage(Context context, String theme,String url, boolean autoToken, String schemeQuery, boolean navigationbar) {
+    public static void goPage(Context context,String theme, String url, boolean autoToken, String schemeQuery, boolean navigationbar) {
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
 //
 //                String yhAppId = SpUtils.getString(mContext, "yhAppId", "");
-
         if (theme==null||theme.equals("")){
             theme1=appCode;
         }else {
@@ -565,12 +553,22 @@ public class TgaSdk {
         return "";
     }
     //跳转游戏中心
-    public static void goPage(Context context,String theme,String url,String gameid,boolean navigationbar) {
-        goPage(context,theme, url, true,gameid,navigationbar);
+    public static void goPage(Context context,String theme2,String url,String gameid,boolean navigationbar) {
+        if (theme2!=null&&!theme2.equals("")){
+            theme = Conctant.themeCorol(theme2);
+        }else {
+            theme=theme2;
+        }
+        goPage(context, theme,url, true,gameid,navigationbar);
     }
     //跳转游戏中心
-    public static void openGameCenter(Context context, String theme,boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback) {
+    public static void openGameCenter(Context context,String theme2, boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback) {
         TgaSdk.gameCenterCallback=gameCenterCallback;
+        if (theme2!=null&&!theme2.equals("")){
+            theme = Conctant.themeCorol(theme2);
+        }else {
+            theme=theme2;
+        }
         goPage(context, theme,"",true,"",navigationbar);
     }
     //跳转游戏中心

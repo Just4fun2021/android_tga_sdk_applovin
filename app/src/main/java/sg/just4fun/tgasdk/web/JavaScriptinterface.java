@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.util.Log;
@@ -52,6 +53,7 @@ import sg.just4fun.tgasdk.modle.GooglePayInfoBean;
 import sg.just4fun.tgasdk.tga.base.HttpBaseResult;
 import sg.just4fun.tgasdk.tga.base.JsonCallback;
 import sg.just4fun.tgasdk.tga.global.AppUrl;
+import sg.just4fun.tgasdk.tga.ui.home.HomeActivity;
 import sg.just4fun.tgasdk.tga.ui.home.model.TgaSdkUserInFo;
 import sg.just4fun.tgasdk.tga.utils.SpUtils;
 import sg.just4fun.tgasdk.tga.utils.ToastUtil;
@@ -148,20 +150,15 @@ public class JavaScriptinterface{
         registerWebview(webview);
     }
 
-
-
     @JavascriptInterface
     public String getTgaSdkVersion(String type){
         return "0.1";
     }
 
-
     @JavascriptInterface
     public void facebookeLogin() {
         Log.d("FB","facebookeLogin");
     }
-
-
 
     @JavascriptInterface
     public void logout(String uuid,String options) {
@@ -345,8 +342,13 @@ public class JavaScriptinterface{
             TgaSdk.gameCenterCallback.openUserLogin(uuid);
         }
     }
-
-
+    //设置游戏中心页状态栏颜色
+    @JavascriptInterface
+    public void statusBarColor(String uuid, String options) {
+        Log.e("游戏中心页状态栏颜色","options="+options);
+        String colorString="#"+options;
+        HomeActivity.tv_stuasbar.setBackgroundColor(Color.parseColor(colorString));
+    }
 
     public void test() {
         this.apploving.showAd(UUID.randomUUID().toString().replace("-",""), "fullscreen");
@@ -357,9 +359,6 @@ public class JavaScriptinterface{
         Log.d("javascriptInterface", "tryFlushEvents " + uuid + " " + options);
         TgaAdSdkUtils.flushAllEvents(webview);
     }
-
-
-
 
     public static String getNumber(String str){
         // 控制正则表达式的匹配行为的参数(小数)
