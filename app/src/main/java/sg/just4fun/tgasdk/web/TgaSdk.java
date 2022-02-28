@@ -334,16 +334,17 @@ public class TgaSdk {
             bipToken = jsonObject.getString("accessToken");
             rebipToken = jsonObject.getString("refreshToken");
             String txnId = user.getString("txnId");
-            String name = user.getString("name");
-            String header = user.getString("header");
             bipUserid= user.getString("id");
-            SpUtils.putString(mContext,"bipHeader",header);
-            SpUtils.putString(mContext,"bipName",name);
             SpUtils.putString(mContext,"bipTxnId",txnId);
             SpUtils.putString(mContext,"bipToken", bipToken);
             SpUtils.putString(mContext,"bipUserId",bipUserid);
             SpUtils.putString(mContext,"reBipToken",rebipToken);
             getGameListHttp(appId, bipToken);
+            String name = user.getString("name");
+            String header = user.getString("header");
+            SpUtils.putString(mContext,"bipHeader",header);
+            SpUtils.putString(mContext,"bipName",name);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
