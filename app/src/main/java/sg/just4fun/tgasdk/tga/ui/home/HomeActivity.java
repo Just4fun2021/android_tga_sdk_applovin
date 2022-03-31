@@ -31,6 +31,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
 import com.smarx.notchlib.NotchScreenManager;
@@ -58,6 +60,7 @@ import sg.just4fun.tgasdk.web.Conctart;
 import sg.just4fun.tgasdk.web.JavaScriptinterface;
 import sg.just4fun.tgasdk.web.LollipopFixedWebView;
 import sg.just4fun.tgasdk.web.TgaSdk;
+import sg.just4fun.tgasdk.web.WebViewGameActivity;
 import sg.just4fun.tgasdk.web.goPage.GoPageUtils;
 import sg.just4fun.tgasdk.web.login.LoginUtils;
 
@@ -259,7 +262,7 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                 .into(img_loading);
         rl_loading.setVisibility(View.VISIBLE);
         if (TgaSdk.listener != null) {
-                            String info = TgaSdk.listener.getAuthCode();
+//                            String info = TgaSdk.listener.getAuthCode();
 //                            SpUtils.putString(HomeActivity.this, "userInfo", info);
 //                            TgaSdkUserInFo userInFo = new TgaSdkUserInFo();
 //                            try {
@@ -465,11 +468,17 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
     }
 
     @Override
-    public void codeCall(String uuid,String code) {
-        if (code==null||code.equals("")){
+    public void codeCall(String uuid,String userInfo) {
+        if (userInfo==null||userInfo.equals("")){
             LoginUtils.codeEvents(add_view,uuid,false);
         }else {
-            getUserCodeInfo(this,uuid,code);
+//            getUserCodeInfo(this,uuid,code);
+            try {
+                String s2 = TgaSdk.toEncryptData(userInfo,TgaSdk.appKey);
+                getUserCode(uuid,s2);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -510,6 +519,56 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                     @Override
                     public void onError(Response<HttpBaseResult<BipGameUserInfo>> response) {
                         Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
+                    }
+                });
+    }
+    private  void getUserCode(String uuid, String encryptData){
+
+        JSONObject jsonObject = new JSONObject();
+        String data = "{}";
+        try {
+            jsonObject.put("encryptData", encryptData);
+            jsonObject.put("appId", TgaSdk.appId);
+            data = jsonObject.toString();
+            Log.e(TGA,"获取code=data="+data);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, data);
+
+        OkGo.<String>post(AppUrl.GET_USER_CODE)
+                .tag(HomeActivity.this)
+                .upRequestBody(body)
+                .execute(new JsonCallback<String>(HomeActivity.this) {
+                    @Override
+                    public void onSuccess(Response response) {
+                        String s1 = response.body().toString();
+//                        s1="{\"stateCode\":1,\"resultInfo\":{\"totalCount\":0,\"desc\":\"SUCCESS\",\"itemCount\":0}}";
+                        Log.e(TGA,"获取code=data="+s1);
+                        Gson gson1 = new GsonBuilder()
+                                .serializeNulls()
+                                .create();
+                        HttpBaseResult httpBaseResult = gson1.fromJson(s1, HttpBaseResult.class);
+                        if (httpBaseResult.getStateCode() == 1) {
+                            String s = gson1.toJson(httpBaseResult.getResultInfo());
+                            try {
+                                Log.e(TGA,"gameif="+s);
+                                JSONObject jsonObject1 = new JSONObject(s);
+                                String code = jsonObject1.getString("code");
+                                getUserCodeInfo(HomeActivity.this,uuid,code);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                Log.e(TGA,"data是不是空="+e.getMessage());
+                            }
+
+                        }
+                    }
+                    @Override
+                    public void onError(Response response) {
+                        Log.e(TGA,"1V1游戏列表数据失败="+response.getException().getMessage());
+
                     }
                 });
     }

@@ -23,9 +23,8 @@ public class TGACallback {
         default void quitLogin(Context context) {
 
         }
-
-        String getAuthCode();
-
+//        String  getAuthCode();
+        String getUserInfo();
         void onInAppShare(Context context, String uuid, String iconUrl, String link, String title, String type);
 //      void onInAppPay(Context context);
 

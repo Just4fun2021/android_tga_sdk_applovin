@@ -127,6 +127,7 @@ sg/just4fun/tgasdk/tga/ui/home/HomeActivity.java
  sg.just4fun.tgasdk.tga.ui.home.HomeActivity$2
  sg.just4fun.tgasdk.tga.ui.home.HomeActivity$3
  sg.just4fun.tgasdk.tga.ui.home.HomeActivity$4
+ sg.just4fun.tgasdk.tga.ui.home.HomeActivity$5
 sg/just4fun/tgasdk/tga/view/immersionbar/FlymeOSStatusBarFontUtils.java
  sg.just4fun.tgasdk.tga.view.immersionbar.FlymeOSStatusBarFontUtils
 sg/just4fun/tgasdk/tga/ui/my/fragment/MyJavaScripface.java
@@ -146,6 +147,7 @@ sg/just4fun/tgasdk/web/WebViewGameActivity.java
  sg.just4fun.tgasdk.web.WebViewGameActivity$3
  sg.just4fun.tgasdk.web.WebViewGameActivity$4
  sg.just4fun.tgasdk.web.WebViewGameActivity$5
+ sg.just4fun.tgasdk.web.WebViewGameActivity$6
 sg/just4fun/tgasdk/tga/base/JsonConvert.java
  sg.just4fun.tgasdk.tga.base.JsonConvert
 sg/just4fun/tgasdk/web/banner/AppLovinAdPlacementConfig.java
@@ -193,6 +195,7 @@ sg/just4fun/tgasdk/web/TgaSdk.java
  sg.just4fun.tgasdk.web.TgaSdk$3
  sg.just4fun.tgasdk.web.TgaSdk$4
  sg.just4fun.tgasdk.web.TgaSdk$5
+ sg.just4fun.tgasdk.web.TgaSdk$6
 sg/just4fun/tgasdk/web/banner/AdConfigUtlis.java
  sg.just4fun.tgasdk.web.banner.AdConfigUtlis
  sg.just4fun.tgasdk.web.banner.AdConfigUtlis$ScriptCodeRunnable

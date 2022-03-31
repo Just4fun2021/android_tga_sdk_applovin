@@ -124,6 +124,8 @@ public class Conctant {
             return "night-blue";
         }else if (theme.equals("dark-blue")){
             return "khalaspay";
+        }else if (theme.equals("gnc")){
+            return "gnc";
         }else {
             return theme;
         }

@@ -12,6 +12,15 @@ public class TgaSdkUserInFo implements Serializable , TgaSdkJsonEntity {
     private String nickname;//":null
     private String avatar;//":"用户头像地址",
     private String gameId;//":"游戏id",
+    private String appKey;//":"密钥",
+
+    public String getAppKey() {
+        return appKey;
+    }
+
+    public void setAppKey(String appKey) {
+        this.appKey = appKey;
+    }
 
     public String getGameId() {
         return gameId;
@@ -90,12 +99,11 @@ public class TgaSdkUserInFo implements Serializable , TgaSdkJsonEntity {
         this.avatar = avatar;
         this.nickname = nickname;
     }
-    public TgaSdkUserInFo(String userId,  String nickname, String avatar,String gameId) {
+    public TgaSdkUserInFo(String userId,  String nickname, String avatar,String appKey) {
         this.userId = userId;
         this.avatar = avatar;
-        this.gameId = gameId;
         this.nickname = nickname;
-
+        this.appKey = appKey;
     }
 
 }

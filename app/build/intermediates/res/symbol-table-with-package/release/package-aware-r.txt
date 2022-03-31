@@ -59,6 +59,9 @@ attr actionOverflowMenuStyle
 attr actionProviderClass
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr ad_marker_color
 attr ad_marker_width
 attr alertDialogButtonGroupStyle
@@ -965,9 +968,11 @@ drawable applovin_ic_check_mark_borderless
 drawable applovin_ic_disclosure_arrow
 drawable applovin_ic_mediation_adcolony
 drawable applovin_ic_mediation_admob
+drawable applovin_ic_mediation_amazon_marketplace
 drawable applovin_ic_mediation_amazon_tam
 drawable applovin_ic_mediation_applovin
 drawable applovin_ic_mediation_chartboost
+drawable applovin_ic_mediation_criteo
 drawable applovin_ic_mediation_facebook
 drawable applovin_ic_mediation_fyber
 drawable applovin_ic_mediation_google_ad_manager
@@ -1003,6 +1008,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circular_shape
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1103,6 +1109,7 @@ drawable exo_styled_controls_subtitle_on
 drawable exo_styled_controls_vr
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable mraid_close
 drawable mute_to_unmute
 drawable notification_action_background
 drawable notification_bg
@@ -1117,6 +1124,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable privacy_icon
+drawable privacy_icon_layered_list
 drawable rounded_button
 drawable rounded_text_view_border
 drawable toast_pyty
@@ -1327,6 +1335,7 @@ id immersion_navigation_bar_view
 id immersion_status_bar_view
 id info
 id inner_parent_layout
+id inter_container
 id interstitial_control_button
 id interstitial_control_view
 id invisible
@@ -1349,6 +1358,7 @@ id media_controller_compat_view_tag
 id message
 id middle
 id motion_base
+id mraid_close_indicator
 id mrec_ad_view_container
 id mrec_control_button
 id mrec_control_view
@@ -1554,6 +1564,7 @@ layout max_native_ad_small_template_1
 layout max_native_ad_vertical_banner_view
 layout max_native_ad_vertical_leader_view
 layout max_native_ad_vertical_media_banner_view
+layout mdtb_interstitial_ad
 layout mediation_debugger_ad_unit_detail_activity
 layout mediation_debugger_multi_ad_activity
 layout notification_action
@@ -1695,8 +1706,22 @@ string exo_track_unknown
 string facebook_app_id
 string facebook_id
 string hello_blank_fragment
+string offline_notification_text
+string offline_notification_title
+string offline_opt_in_confirm
+string offline_opt_in_confirmation
+string offline_opt_in_decline
+string offline_opt_in_message
+string offline_opt_in_title
 string packagename
 string payerror
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string sdkiniterror
 string search_menu_title
 string status_bar_notification_info_overflow
@@ -2017,6 +2042,7 @@ style Theme_AppCompat_Light_Dialog_Alert
 style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_IAPTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -2124,6 +2150,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_constantSize android_dither android_enterFadeDuration android_exitFadeDuration android_variablePadding android_visible
 styleable AnimatedStateListDrawableItem android_drawable android_id

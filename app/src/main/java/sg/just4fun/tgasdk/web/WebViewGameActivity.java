@@ -50,6 +50,7 @@ import sg.just4fun.tgasdk.adsdk.TgaAdSdkUtils;
 import sg.just4fun.tgasdk.callback.TGACallback;
 import sg.just4fun.tgasdk.conctart.SdkActivityDele;
 import sg.just4fun.tgasdk.modle.BipGameUserInfo;
+import sg.just4fun.tgasdk.modle.UserInFoBean;
 import sg.just4fun.tgasdk.tga.base.HttpBaseResult;
 import sg.just4fun.tgasdk.tga.base.JsonCallback;
 import sg.just4fun.tgasdk.tga.global.AppUrl;
@@ -449,11 +450,18 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
         Log.e(TGA,"webvigame="+uuid+" 成功=="+success);
     }
     @Override
-    public void codeCall(String uuid,String code) {
-        if (code==null||code.equals("")){
+    public void codeCall(String uuid,String userInfo) {
+        if (userInfo==null||userInfo.equals("")){
             LoginUtils.codeEvents(add_view,uuid,false);
         }else {
-            getUserCodeInfo(this,uuid,code);
+//            getUserCodeInfo(this,uuid,code);
+
+            try {
+                String s2 = TgaSdk.toEncryptData(userInfo,TgaSdk.appKey);
+                getUserCode(uuid,s2);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -506,6 +514,57 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
                     @Override
                     public void onError(Response response) {
                         Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
+                    }
+                });
+    }
+
+    private  void getUserCode(String uuid, String encryptData){
+
+        JSONObject jsonObject = new JSONObject();
+        String data = "{}";
+        try {
+            jsonObject.put("encryptData", encryptData);
+            jsonObject.put("appId", TgaSdk.appId);
+            data = jsonObject.toString();
+            Log.e(TGA,"获取code=data="+data);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, data);
+
+        OkGo.<String>post(AppUrl.GET_USER_CODE)
+                .tag(WebViewGameActivity.this)
+                .upRequestBody(body)
+                .execute(new JsonCallback<String>(WebViewGameActivity.this) {
+                    @Override
+                    public void onSuccess(Response response) {
+                        String s1 = response.body().toString();
+//                        s1="{\"stateCode\":1,\"resultInfo\":{\"totalCount\":0,\"desc\":\"SUCCESS\",\"itemCount\":0}}";
+                        Log.e(TGA,"获取code=data="+s1);
+                        Gson gson1 = new GsonBuilder()
+                                .serializeNulls()
+                                .create();
+                        HttpBaseResult httpBaseResult = gson1.fromJson(s1, HttpBaseResult.class);
+                        if (httpBaseResult.getStateCode() == 1) {
+                            String s = gson1.toJson(httpBaseResult.getResultInfo());
+                            try {
+                                Log.e(TGA,"gameif="+s);
+                                JSONObject jsonObject1 = new JSONObject(s);
+                                String code = jsonObject1.getString("code");
+                                getUserCodeInfo(WebViewGameActivity.this,uuid,code);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                Log.e(TGA,"data是不是空="+e.getMessage());
+                            }
+
+                        }
+                    }
+                    @Override
+                    public void onError(Response response) {
+                        Log.e(TGA,"1V1游戏列表数据失败="+response.getException().getMessage());
+
                     }
                 });
     }

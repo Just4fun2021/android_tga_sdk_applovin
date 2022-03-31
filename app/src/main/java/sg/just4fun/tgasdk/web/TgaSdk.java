@@ -2,8 +2,11 @@ package sg.just4fun.tgasdk.web;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -15,10 +18,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
+
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -167,55 +175,55 @@ public class TgaSdk {
                     }
                 });
     }
-    // TGASDK获取游戏token
-    private static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson){
-        String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
-
-        String data="{}";
-        JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put("fpId",fpId);
-            if (listener!=null){
-                String userInfo = listener.getAuthCode();
-                jsonObject.put("code",userInfo);
-            }
-            data = jsonObject.toString();
-            Log.e(TGA,"参数json"+data);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-        RequestBody body = RequestBody.create(JSON, data);
-        if(TgaSdk.env.equals("bip")){
-            userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
-        }else {
-            userinfoUrl= AppUrl.GAME_BIP_CODE_SDK_USER_INFO;
-        }
-//        BipGameUserInfo
-        OkGo.<String>post(userinfoUrl)
-                .tag(mContext)
-                .headers("appId",appId)
-                .upRequestBody(body)
-                .execute(new JsonCallback<String>(mContext) {
-                    @Override
-                    public void onSuccess(Response response) {
-                        String s1 = response.body().toString();
-                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
-                        if (httpBaseResult.getStateCode() == 1) {
-
-                            svanTokenInfo(gson.toJson(httpBaseResult.getResultInfo()));
-
-                            initCodeTokenInfo(pkName, resultInfo, gson, R.string.packagename, R.string.packagename);
+//    // TGASDK获取游戏token
+//    private static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson){
+//        String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
 //
-                        }
-                    }
-
-                    @Override
-                    public void onError(Response response) {
-                        Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
-                    }
-                });
-    }
+//        String data="{}";
+//        JSONObject jsonObject = new JSONObject();
+//        try {
+//            jsonObject.put("fpId",fpId);
+//            if (listener!=null){
+//                String userInfo = listener.getAuthCode();
+//                jsonObject.put("code",userInfo);
+//            }
+//            data = jsonObject.toString();
+//            Log.e(TGA,"参数json"+data);
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+//        RequestBody body = RequestBody.create(JSON, data);
+//        if(TgaSdk.env.equals("bip")){
+//            userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
+//        }else {
+//            userinfoUrl= AppUrl.GAME_BIP_CODE_SDK_USER_INFO;
+//        }
+////        BipGameUserInfo
+//        OkGo.<String>post(userinfoUrl)
+//                .tag(mContext)
+//                .headers("appId",appId)
+//                .upRequestBody(body)
+//                .execute(new JsonCallback<String>(mContext) {
+//                    @Override
+//                    public void onSuccess(Response response) {
+//                        String s1 = response.body().toString();
+//                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
+//                        if (httpBaseResult.getStateCode() == 1) {
+//
+//                            svanTokenInfo(gson.toJson(httpBaseResult.getResultInfo()));
+//
+//                            initCodeTokenInfo(pkName, resultInfo, gson, R.string.packagename, R.string.packagename);
+////
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onError(Response response) {
+//                        Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
+//                    }
+//                });
+//    }
 
     private static void initCodeTokenInfo(String pkName, UserInFoBean resultInfo, Gson gson, int p, int p2) {
         if (packageName != null && !packageName.equals("")) {
@@ -334,7 +342,9 @@ public class TgaSdk {
             bipToken = jsonObject.getString("accessToken");
             rebipToken = jsonObject.getString("refreshToken");
             String txnId = user.getString("txnId");
+
             bipUserid= user.getString("id");
+            Log.e(TGA, "bipUserid=" +bipUserid);
             SpUtils.putString(mContext,"bipTxnId",txnId);
             SpUtils.putString(mContext,"bipToken", bipToken);
             SpUtils.putString(mContext,"bipUserId",bipUserid);
@@ -473,7 +483,8 @@ public class TgaSdk {
                 Log.e(TGA,"isSuccess==1");
                 if (TgaSdk.listener!=null){
                     Log.e(TGA,"TgaSdk.listener不为空");
-                    String userInfo = TgaSdk.listener.getAuthCode();
+//                    String userInfo = TgaSdk.listener.getAuthCode();
+                    String userInfo = TgaSdk.listener.getUserInfo();
                     if(bipToken==null||bipToken.equals("")){
                         Log.e(TGA,"bipToken="+bipToken);
 //                                  "&txnId=1&msisdn=1"+
@@ -535,15 +546,6 @@ public class TgaSdk {
 //        }).start();
 
     }
-    public static String buildUserInfo(String userId, String nickName, String headImg) {
-        TgaSdkUserInFo  userInFo = new TgaSdkUserInFo(userId, nickName, headImg);
-        try {
-            return userInFo.toJson().toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "";
-    }
     public static String getSchemeQuery (String query) {
         TgaSdkUserInFo  userInFo = new TgaSdkUserInFo(query);
         try {
@@ -587,10 +589,10 @@ public class TgaSdk {
             TGACallback.listener.shareCall(uuid, success);
         }
     }
-    public static void onUserLogined(String uuid,String code) {
+    public static void onUserLogined(String uuid,String userInfo) {
         if (TGACallback.codeCallback!=null){
 
-            TGACallback.codeCallback.codeCall(uuid,code);
+            TGACallback.codeCallback.codeCall(uuid,userInfo);
         }
     }
     public static void onLogout() {
@@ -638,6 +640,7 @@ public class TgaSdk {
                 .tag(mContext)
                 .upRequestBody(body)
                 .execute(new JsonCallback<String>(mContext) {
+                    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                     @Override
                     public void onSuccess(Response response) {
                         String s1 = response.body().toString();
@@ -663,10 +666,14 @@ public class TgaSdk {
 //                            获取游戏token
 //                            gameUserLogin();
 //                            通过code获取用户信息
-                                    String userInfo = listener.getAuthCode();
+                                    String userInfo = listener.getUserInfo();
+
                                     SpUtils.putString(mContext,"yhAppId",appId);
                                     if(userInfo!=null&&!userInfo.equals("")){
-                                        userCodeLogin(pkName,resultInfo,gson);
+
+                                        String s2 = toEncryptData(userInfo,appKe);
+                                        getUserCode(pkName,resultInfo,gson,s2);
+
                                     }else {
                                         gameUserLogin(pkName,resultInfo,gson);
                                     }
@@ -723,4 +730,147 @@ public class TgaSdk {
         return "获取错误";
     }
 
+
+
+    private static void getUserCode(String pkName, UserInFoBean resultInfo, Gson gson, String encryptData){
+
+        JSONObject jsonObject = new JSONObject();
+        String data = "{}";
+        try {
+            jsonObject.put("encryptData", encryptData);
+            jsonObject.put("appId", appId);
+            data = jsonObject.toString();
+            Log.e(TGA,"获取code=data="+data);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, data);
+
+        gamelistUrl= AppUrl.GET_USER_CODE;
+
+        OkGo.<String>post(gamelistUrl)
+                .tag(mContext)
+                .upRequestBody(body)
+                .execute(new JsonCallback<String>(mContext) {
+                    @Override
+                    public void onSuccess(Response response) {
+                        String s1 = response.body().toString();
+//                        s1="{\"stateCode\":1,\"resultInfo\":{\"totalCount\":0,\"desc\":\"SUCCESS\",\"itemCount\":0}}";
+                        Log.e(TGA,"获取code=data="+s1);
+                        Gson gson1 = new GsonBuilder()
+                                .serializeNulls()
+                                .create();
+                        HttpBaseResult httpBaseResult = gson1.fromJson(s1, HttpBaseResult.class);
+                        if (httpBaseResult.getStateCode() == 1) {
+                            String s = gson1.toJson(httpBaseResult.getResultInfo());
+                            try {
+                                Log.e(TGA,"gameif="+s);
+                                JSONObject jsonObject1 = new JSONObject(s);
+                                String code = jsonObject1.getString("code");
+                                userCodeLogin(pkName,resultInfo,gson,code);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                                Log.e(TGA,"data是不是空="+e.getMessage());
+                            }
+
+                        }
+                    }
+                    @Override
+                    public void onError(Response response) {
+                        Log.e(TGA,"1V1游戏列表数据失败="+response.getException().getMessage());
+
+                    }
+                });
+    }
+    // TGASDK获取游戏token
+    public static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson,String code ){
+        String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
+
+        String data="{}";
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("fpId",fpId);
+            if (listener!=null){
+//                String userInfo = listener.getAuthCode();
+//                String userInfo = TgaSdk.listener.getUserInfo();
+                jsonObject.put("code",code);
+            }
+            data = jsonObject.toString();
+            Log.e(TGA,"参数json"+data);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, data);
+        if(TgaSdk.env.equals("bip")){
+            userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
+        }else {
+            userinfoUrl= AppUrl.GAME_BIP_CODE_SDK_USER_INFO;
+        }
+//        BipGameUserInfo
+        OkGo.<String>post(userinfoUrl)
+                .tag(mContext)
+                .headers("appId",appId)
+                .upRequestBody(body)
+                .execute(new JsonCallback<String>(mContext) {
+                    @Override
+                    public void onSuccess(Response response) {
+                        String s1 = response.body().toString();
+                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
+                        if (httpBaseResult.getStateCode() == 1) {
+
+                            svanTokenInfo(gson.toJson(httpBaseResult.getResultInfo()));
+
+                            initCodeTokenInfo(pkName, resultInfo, gson, R.string.packagename, R.string.packagename);
+//
+                        }
+                    }
+
+                    @Override
+                    public void onError(Response response) {
+                        Log.e(TGA,"获取1v1游戏列表token失败"+response.getException().getMessage());
+                    }
+                });
+    }
+
+    public static String buildUserInfo(String userId, String nickName, String headImg) {
+        TgaSdkUserInFo  userInFo = new TgaSdkUserInFo(userId, nickName, headImg);
+        try {
+            return userInFo.toJson().toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+  public static String toEncryptData(String jsonUserInfo,String appSecret) throws Exception {
+        //将当前用户的信息封装为json格式
+
+        //------- 补0到32位，如果您的appSecret已经是32位，可以省略该过程
+        //如果您的appSecretKey不足32位，为了避免AES加密触发Invalid Key Length错误(需要（256-bit也就是32-length的bytes)，在appSecretKey末尾补0到32位
+      StringBuilder stringBuilder = new StringBuilder(appSecret);
+      while(stringBuilder.length() < 32) {
+          stringBuilder.append('0');
+        }
+        //将补足到32位的AESKEY字符串直接转为32位的bytes，即256-bit的aesKey
+      byte[] bytes = stringBuilder.toString().getBytes();
+
+      //---- 如果appSecret本来就是32位可以直接
+        // var aesKey = appSecret.getBytes();
+
+
+        //将要加密的json字符串转化为bytes。建议使用UTF_8编码。使用其他编码格式有可能会无法被解析成功
+      byte[] bytes1 = jsonUserInfo.getBytes(StandardCharsets.UTF_8);
+
+      //使用Cipher执行标准的AES/ECB/PKCS5Padding加密，得到加密后的数据bytes。开发者可以使用自己平时习惯的AES的库（只要是标准的AES/ECB/PKCS5Padding）替代下列过程
+      SecretKeySpec secretKeySpec = new SecretKeySpec(bytes, "AES");
+      Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+      cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+      byte[] encryptData = cipher.doFinal(bytes1);
+
+      //将加密后的数据bytes执行Base64Encode转化为base64字符串
+        return Base64.getEncoder().encodeToString(encryptData);
+    }
 }
