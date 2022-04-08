@@ -1,10 +1,10 @@
 [
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-v23\\exo_styled_player_control_rewind_button.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-v23\\exo_styled_player_control_rewind_button.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout-v23\\exo_styled_player_control_rewind_button.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-v23\\exo_styled_player_control_ffwd_button.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-v23\\exo_styled_player_control_ffwd_button.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout-v23\\exo_styled_player_control_ffwd_button.xml"
     }
 ]

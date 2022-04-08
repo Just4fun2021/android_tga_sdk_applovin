@@ -746,9 +746,11 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-
-        gamelistUrl= AppUrl.GET_USER_CODE;
-
+        if(env.equals("bip")){
+            gamelistUrl= AppUrl.BIP_GET_USER_CODE;
+        }else {
+            gamelistUrl= AppUrl.GET_USER_CODE;
+        }
         OkGo.<String>post(gamelistUrl)
                 .tag(mContext)
                 .upRequestBody(body)

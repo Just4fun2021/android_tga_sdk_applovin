@@ -17,5 +17,5 @@ public class AppUrl {
     public static final String BIP_GAME_BIP_LOGIN_SDK=Global.BIP_TEST_HOST_GOOGLE_PAY_URL_NEW+"tgadpUser/TPLogin";//bip登录获取用户信息
     public static final String BIP_GAME_BIP_CODE_SDK_USER_INFO=Global.BIP_TEST_HOST_GOOGLE_PAY_URL_NEW+"tgadpUser/TPLoginByCode";//bip登录获取用户信息
 
-
+    public static final String BIP_GET_USER_CODE=Global.BIP_TEST_HOST_GOOGLE_PAY_URL_NEW+"tgadpUser/CreateLoginCode";//获取通过用户信息获取相对于code
 }

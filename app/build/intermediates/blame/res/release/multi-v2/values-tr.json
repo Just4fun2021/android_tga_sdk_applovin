@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-tr\\values-tr.xml",
+            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-tr\\values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\49377805af9183d7feb446ca119598b6\\play-services-basement-17.0.0\\res\\values-tr\\values.xml",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\49377805af9183d7feb446ca119598b6\\play-services-basement-17.0.0\\res\\values-tr\\values.xml",
