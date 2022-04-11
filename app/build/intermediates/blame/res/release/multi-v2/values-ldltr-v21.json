@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-ldltr-v21\\values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\values-ldltr-v21\\values-ldltr-v21.xml",

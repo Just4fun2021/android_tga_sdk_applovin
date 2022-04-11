@@ -133,11 +133,15 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(env.equals("bip")){
+
+        if(env.equals("bip_debug")){
+            infoUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO_DEBUG;
+        }else   if(env.equals("bip")){
             googlepayUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO;
         }else {
             googlepayUrl= AppUrl.GET_GOOGLEPAY_INFO;
         }
+
 //
         OkGo.<String>post(googlepayUrl)
                 .tag(mContext)
@@ -308,7 +312,9 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(TgaSdk.env.equals("bip")){
+        if(TgaSdk.env.equals("bip_debug")){
+            loginsdkUrl= AppUrl.BIP_GAME_BIP_LOGIN_SDK_DEBUG;
+        }else if(TgaSdk.env.equals("bip")){
             loginsdkUrl= AppUrl.BIP_GAME_BIP_LOGIN_SDK;
         }else {
             loginsdkUrl= AppUrl.GAME_BIP_LOGIN_SDK;
@@ -384,11 +390,16 @@ public class TgaSdk {
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
 
-        if(TgaSdk.env.equals("bip")){
+        if(TgaSdk.env.equals("bip_debug")){
+            gamelistUrl= AppUrl.BIP_GET_GAME_LIST_DEBUG;
+        }else  if(TgaSdk.env.equals("bip")){
             gamelistUrl= AppUrl.BIP_GET_GAME_LIST;
-        }else {
+        }else  {
             gamelistUrl= AppUrl.GET_GAME_LIST;
         }
+
+
+
 //
         OkGo.<String>post(gamelistUrl)
                 .tag(mContext)
@@ -631,7 +642,9 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(env.equals("bip")){
+        if(env.equals("bip_debug")){
+            infoUrl= AppUrl.BIP_TGA_SDK_INFO_DEBUG;
+        }else  if(env.equals("bip")){
             infoUrl= AppUrl.BIP_TGA_SDK_INFO;
         }else {
             infoUrl= AppUrl.TGA_SDK_INFO;
@@ -746,7 +759,9 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(env.equals("bip")){
+        if(env.equals("bip_debug")){
+            gamelistUrl= AppUrl.BIP_GET_USER_CODE_DEBUG;
+        }else if(env.equals("bip")){
             gamelistUrl= AppUrl.BIP_GET_USER_CODE;
         }else {
             gamelistUrl= AppUrl.GET_USER_CODE;
@@ -806,7 +821,9 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(TgaSdk.env.equals("bip")){
+        if(TgaSdk.env.equals("bip_debug")){
+            userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO_DEBUG;
+        }else  if(TgaSdk.env.equals("bip")){
             userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
         }else {
             userinfoUrl= AppUrl.GAME_BIP_CODE_SDK_USER_INFO;
