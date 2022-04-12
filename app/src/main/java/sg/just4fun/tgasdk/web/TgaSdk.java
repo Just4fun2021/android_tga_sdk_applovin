@@ -134,7 +134,7 @@ public class TgaSdk {
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
 
-        if(env.equals("bip_debug")){
+        if(env.equals("bip_test")){
             infoUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO_DEBUG;
         }else   if(env.equals("bip")){
             googlepayUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO;
@@ -312,7 +312,7 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(TgaSdk.env.equals("bip_debug")){
+        if(TgaSdk.env.equals("bip_test")){
             loginsdkUrl= AppUrl.BIP_GAME_BIP_LOGIN_SDK_DEBUG;
         }else if(TgaSdk.env.equals("bip")){
             loginsdkUrl= AppUrl.BIP_GAME_BIP_LOGIN_SDK;
@@ -390,7 +390,7 @@ public class TgaSdk {
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
 
-        if(TgaSdk.env.equals("bip_debug")){
+        if(TgaSdk.env.equals("bip_test")){
             gamelistUrl= AppUrl.BIP_GET_GAME_LIST_DEBUG;
         }else  if(TgaSdk.env.equals("bip")){
             gamelistUrl= AppUrl.BIP_GET_GAME_LIST;
@@ -642,7 +642,7 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(env.equals("bip_debug")){
+        if(env.equals("bip_test")){
             infoUrl= AppUrl.BIP_TGA_SDK_INFO_DEBUG;
         }else  if(env.equals("bip")){
             infoUrl= AppUrl.BIP_TGA_SDK_INFO;
@@ -759,7 +759,7 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(env.equals("bip_debug")){
+        if(env.equals("bip_test")){
             gamelistUrl= AppUrl.BIP_GET_USER_CODE_DEBUG;
         }else if(env.equals("bip")){
             gamelistUrl= AppUrl.BIP_GET_USER_CODE;
@@ -821,7 +821,7 @@ public class TgaSdk {
         }
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         RequestBody body = RequestBody.create(JSON, data);
-        if(TgaSdk.env.equals("bip_debug")){
+        if(TgaSdk.env.equals("bip_test")){
             userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO_DEBUG;
         }else  if(TgaSdk.env.equals("bip")){
             userinfoUrl= AppUrl.BIP_GAME_BIP_CODE_SDK_USER_INFO;
