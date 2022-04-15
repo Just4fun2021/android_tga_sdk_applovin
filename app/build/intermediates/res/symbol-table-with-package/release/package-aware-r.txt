@@ -1722,6 +1722,7 @@ string s4
 string s5
 string s6
 string s7
+string sdkinitcompleted
 string sdkiniterror
 string search_menu_title
 string status_bar_notification_info_overflow

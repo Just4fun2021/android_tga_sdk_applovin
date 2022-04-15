@@ -10,4 +10,5 @@
     <string name="packagename">The apk package name is inconsistent</string>
     <string name="sdkiniterror">SDK initalization failed!</string>
     <string name="payerror">the order is abnormal, please contact customer service.</string>
+    <string name="sdkinitcompleted">Initialization not completed</string>
 </resources>

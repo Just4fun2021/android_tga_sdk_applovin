@@ -61,6 +61,7 @@ string facebook_id
 string hello_blank_fragment
 string packagename
 string payerror
+string sdkinitcompleted
 string sdkiniterror
 string vungle_app_id
 style AppTheme

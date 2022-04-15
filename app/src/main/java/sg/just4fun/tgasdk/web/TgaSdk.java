@@ -230,6 +230,7 @@ public class TgaSdk {
 //    }
 
     private static void initCodeTokenInfo(String pkName, UserInFoBean resultInfo, Gson gson, int p, int p2) {
+        isSuccess=2;
         if (packageName != null && !packageName.equals("")) {
             if (packageName.equals(pkName)) {
                 iconpath = resultInfo.getIconpath();
@@ -397,9 +398,6 @@ public class TgaSdk {
         }else  {
             gamelistUrl= AppUrl.GET_GAME_LIST;
         }
-
-
-
 //
         OkGo.<String>post(gamelistUrl)
                 .tag(mContext)
@@ -423,7 +421,6 @@ public class TgaSdk {
                             try {
                                 Log.e(TGA,"gameif="+s);
                                 JSONObject jsonObject1 = new JSONObject(s);
-
                                 JSONArray data1 = jsonObject1.getJSONArray("data");
                                 if(data1!=null&&data1.length()>0){
                                     gameif.clear();
@@ -542,6 +539,10 @@ public class TgaSdk {
                     initCallback.initError(mContext.getResources().getString(R.string.sdkiniterror));
                     return;
                 }
+            }else  if(isSuccess==2){
+                Log.e(TGA,"初始化.isSuccess=2");
+                initCallback.initError(mContext.getResources().getString(R.string.sdkinitcompleted));
+                return;
             }else {
                 Log.e(TGA,"初始化.isSuccess=0");
                 initCallback.initError(mContext.getResources().getString(R.string.sdkiniterror));
@@ -577,6 +578,7 @@ public class TgaSdk {
     }
     //跳转游戏中心
     public static void openGameCenter(Context context,String theme2, boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback) {
+
         TgaSdk.gameCenterCallback=gameCenterCallback;
         if (theme2!=null&&!theme2.equals("")){
             theme = Conctant.themeCorol(theme2);
@@ -632,6 +634,7 @@ public class TgaSdk {
 
     //拉取SDK配置表
     public static void getUserInfo(String appKe){
+        isSuccess=2;
         JSONObject jsonObject = new JSONObject();
         String data = "{}";
         try {
@@ -746,7 +749,7 @@ public class TgaSdk {
 
 
     private static void getUserCode(String pkName, UserInFoBean resultInfo, Gson gson, String encryptData){
-
+        isSuccess=2;
         JSONObject jsonObject = new JSONObject();
         String data = "{}";
         try {

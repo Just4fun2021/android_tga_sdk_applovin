@@ -1721,10 +1721,11 @@ int string s4 0x7f14007e
 int string s5 0x7f14007f
 int string s6 0x7f140080
 int string s7 0x7f140081
-int string sdkiniterror 0x7f140082
-int string search_menu_title 0x7f140083
-int string status_bar_notification_info_overflow 0x7f140084
-int string vungle_app_id 0x7f140085
+int string sdkinitcompleted 0x7f140082
+int string sdkiniterror 0x7f140083
+int string search_menu_title 0x7f140084
+int string status_bar_notification_info_overflow 0x7f140085
+int string vungle_app_id 0x7f140086
 int style AlertDialog_AppCompat 0x7f150001
 int style AlertDialog_AppCompat_Light 0x7f150002
 int style Animation_AppCompat_Dialog 0x7f150003

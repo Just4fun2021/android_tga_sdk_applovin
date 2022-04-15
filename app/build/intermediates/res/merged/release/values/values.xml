@@ -894,6 +894,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="packagename">包名不一致</string>
     <string name="payerror">订单异常,请联系客服</string>
+    <string name="sdkinitcompleted">sdk初始化未完成</string>
     <string name="sdkiniterror">sdk初始化失败</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
