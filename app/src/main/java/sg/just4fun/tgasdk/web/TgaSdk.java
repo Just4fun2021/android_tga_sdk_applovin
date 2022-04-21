@@ -117,68 +117,68 @@ public class TgaSdk {
         TgaSdk.appPaymentKey = appPaymentKey;
         Log.e(TGA,"appPaymentKey是不是空了="+appPaymentKey);
 //       获取用户配置表
-        getUserInfo(appKey);
+        getUserInfo(appKey,mContext);
     }
 
 
-    // TGASDK拉取google支付配置
-    private static void getGooglePayInfo(String appId) {
-        JSONObject jsonObject = new JSONObject();
-        String data = "{}";
-        try {
-            jsonObject.put("appId", appId);
-            data = jsonObject.toString();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-        RequestBody body = RequestBody.create(JSON, data);
-
-        if(env.equals("bip_test")){
-            infoUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO_DEBUG;
-        }else   if(env.equals("bip")){
-            googlepayUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO;
-        }else {
-            googlepayUrl= AppUrl.GET_GOOGLEPAY_INFO;
-        }
-
+//    // TGASDK拉取google支付配置
+//    private static void getGooglePayInfo(String appId) {
+//        JSONObject jsonObject = new JSONObject();
+//        String data = "{}";
+//        try {
+//            jsonObject.put("appId", appId);
+//            data = jsonObject.toString();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+//        RequestBody body = RequestBody.create(JSON, data);
 //
-        OkGo.<String>post(googlepayUrl)
-                .tag(mContext)
-                .upRequestBody(body)
-                .execute(new JsonCallback<String>(mContext) {
-                    @Override
-                    public void onSuccess(Response response) {
-                        String s1 = response.body().toString();
-                        Log.e(TGA,"初始化成功的="+s1);
-                        Gson gson = new GsonBuilder()
-                                .serializeNulls()
-                                .create();
-                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
-                        if (httpBaseResult.getStateCode() == 1) {
-                            try {
-                                String s = gson.toJson(httpBaseResult.getResultInfo());
-                                JSONObject jsonObject1 = new JSONObject(s);
-                                JSONArray data1 = jsonObject1.getJSONArray("data");
-                                if (data1!=null&&data1.length()>0){
-                                    for (int a=0;a<data1.length();a++){
-                                        String o = String.valueOf(data1.get(a));
-                                        GooglePayInfo googlePayInfo = gson.fromJson(o, GooglePayInfo.class);
-                                        infoList.add(googlePayInfo);
-                                    }
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            Log.e(TGA,"google支付配置="+infoList);
-                        }
-                    }
-                    @Override
-                    public void onError(Response response) {
-                        Log.e(TGA,"google支付配置失败="+response.message());
-                    }
-                });
-    }
+//        if(env.equals("bip_test")){
+//            infoUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO_DEBUG;
+//        }else   if(env.equals("bip")){
+//            googlepayUrl= AppUrl.BIP_GET_GOOGLEPAY_INFO;
+//        }else {
+//            googlepayUrl= AppUrl.GET_GOOGLEPAY_INFO;
+//        }
+//
+////
+//        OkGo.<String>post(googlepayUrl)
+//                .tag(mContext)
+//                .upRequestBody(body)
+//                .execute(new JsonCallback<String>(mContext) {
+//                    @Override
+//                    public void onSuccess(Response response) {
+//                        String s1 = response.body().toString();
+//                        Log.e(TGA,"初始化成功的="+s1);
+//                        Gson gson = new GsonBuilder()
+//                                .serializeNulls()
+//                                .create();
+//                        HttpBaseResult httpBaseResult = gson.fromJson(s1, HttpBaseResult.class);
+//                        if (httpBaseResult.getStateCode() == 1) {
+//                            try {
+//                                String s = gson.toJson(httpBaseResult.getResultInfo());
+//                                JSONObject jsonObject1 = new JSONObject(s);
+//                                JSONArray data1 = jsonObject1.getJSONArray("data");
+//                                if (data1!=null&&data1.length()>0){
+//                                    for (int a=0;a<data1.length();a++){
+//                                        String o = String.valueOf(data1.get(a));
+//                                        GooglePayInfo googlePayInfo = gson.fromJson(o, GooglePayInfo.class);
+//                                        infoList.add(googlePayInfo);
+//                                    }
+//                                }
+//                            } catch (JSONException e) {
+//                                e.printStackTrace();
+//                            }
+//                            Log.e(TGA,"google支付配置="+infoList);
+//                        }
+//                    }
+//                    @Override
+//                    public void onError(Response response) {
+//                        Log.e(TGA,"google支付配置失败="+response.message());
+//                    }
+//                });
+//    }
 //    // TGASDK获取游戏token
 //    private static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson){
 //        String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
@@ -269,7 +269,7 @@ public class TgaSdk {
                 } else {
                     gameCentreUrl = Global.TEST_MOREN;
                 }
-                getGooglePayInfo(appId);
+//                getGooglePayInfo(appId);
                 Log.e("tgasdk", "ad配置表==" + applovnIdConfig);
                 isSuccess = 1;
                 initCallback.initSucceed();
@@ -348,15 +348,15 @@ public class TgaSdk {
             JSONObject user = jsonObject.getJSONObject("user");
             bipToken = jsonObject.getString("accessToken");
             rebipToken = jsonObject.getString("refreshToken");
-            String txnId = user.getString("txnId");
-
+//            getGameListHttp(appId, bipToken);
             bipUserid= user.getString("id");
-            Log.e(TGA, "bipUserid=" +bipUserid);
-            SpUtils.putString(mContext,"bipTxnId",txnId);
             SpUtils.putString(mContext,"bipToken", bipToken);
             SpUtils.putString(mContext,"bipUserId",bipUserid);
             SpUtils.putString(mContext,"reBipToken",rebipToken);
-            getGameListHttp(appId, bipToken);
+            String txnId = user.getString("txnId");
+
+            Log.e(TGA, "bipUserid=" +bipUserid);
+            SpUtils.putString(mContext,"bipTxnId",txnId);
             String name = user.getString("name");
             String header = user.getString("header");
             SpUtils.putString(mContext,"bipHeader",header);
@@ -633,7 +633,7 @@ public class TgaSdk {
     }
 
     //拉取SDK配置表
-    public static void getUserInfo(String appKe){
+    public static void getUserInfo(String appKe,Context mContext){
         isSuccess=2;
         JSONObject jsonObject = new JSONObject();
         String data = "{}";
@@ -688,7 +688,7 @@ public class TgaSdk {
                                     if(userInfo!=null&&!userInfo.equals("")){
 
                                         String s2 = toEncryptData(userInfo,appKe);
-                                        getUserCode(pkName,resultInfo,gson,s2);
+                                        getUserCode(pkName,resultInfo,gson,s2,mContext);
 
                                     }else {
                                         gameUserLogin(pkName,resultInfo,gson);
@@ -748,7 +748,7 @@ public class TgaSdk {
 
 
 
-    private static void getUserCode(String pkName, UserInFoBean resultInfo, Gson gson, String encryptData){
+    private static void getUserCode(String pkName, UserInFoBean resultInfo, Gson gson, String encryptData,Context mContext){
         isSuccess=2;
         JSONObject jsonObject = new JSONObject();
         String data = "{}";
@@ -788,7 +788,7 @@ public class TgaSdk {
                                 Log.e(TGA,"gameif="+s);
                                 JSONObject jsonObject1 = new JSONObject(s);
                                 String code = jsonObject1.getString("code");
-                                userCodeLogin(pkName,resultInfo,gson,code);
+                                userCodeLogin(pkName,resultInfo,gson,code,mContext);
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -805,7 +805,7 @@ public class TgaSdk {
                 });
     }
     // TGASDK获取游戏token
-    public static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson,String code ){
+    public static void userCodeLogin(String pkName,UserInFoBean resultInfo,Gson gson,String code,Context mContext ){
         String  fpId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
 
         String data="{}";

@@ -103,7 +103,7 @@ public class MyJavaScripface {
 //        }
 
         if (TgaSdk.appConfigbeanList==null){
-            TgaSdk.getUserInfo(TgaSdk.appPaymentKey);
+            TgaSdk.getUserInfo(TgaSdk.appPaymentKey,context);
         }
 
         metaDataStringApplication1 = Conctart.getMetaDataStringApplication(context,"applovin.sdk.key", "");

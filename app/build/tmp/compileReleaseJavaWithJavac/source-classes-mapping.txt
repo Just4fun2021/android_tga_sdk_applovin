@@ -195,7 +195,6 @@ sg/just4fun/tgasdk/web/TgaSdk.java
  sg.just4fun.tgasdk.web.TgaSdk$3
  sg.just4fun.tgasdk.web.TgaSdk$4
  sg.just4fun.tgasdk.web.TgaSdk$5
- sg.just4fun.tgasdk.web.TgaSdk$6
 sg/just4fun/tgasdk/web/banner/AdConfigUtlis.java
  sg.just4fun.tgasdk.web.banner.AdConfigUtlis
  sg.just4fun.tgasdk.web.banner.AdConfigUtlis$ScriptCodeRunnable
