@@ -46,7 +46,7 @@ public class GoPageUtils {
             intent.putExtra("uuid",uuid);
             intent.putExtra("gopag",1);
             intent.putExtra("statusaBar",statusBarDisplay.isDisplay());
-            intent.putExtra("statusaBarColor",statusBarDisplay.getBackgroundColor());
+            intent.putExtra("statusaBarColor",TgaSdk.theme1);
             intent.putExtra("navigationBar",navigationBar.isDisplay());
             intent.putExtra("backgroundColor",navigationBar.getBackgroundColor());
             intent.putExtra("yssdk",1);
@@ -57,6 +57,7 @@ public class GoPageUtils {
             intent.putExtra("uuid",uuid);
             intent.putExtra("gopag",1);
             intent.putExtra("yssdk",0);
+            intent.putExtra("statusaBarColor",TgaSdk.theme1);
             context.startActivity(intent);
         }
             try {

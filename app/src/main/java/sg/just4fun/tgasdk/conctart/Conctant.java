@@ -131,5 +131,34 @@ public class Conctant {
         }
     }
 
-
+    //皮肤主题颜色的配置
+    public static String themeCorolVuel(String theme){
+        if (theme.equals("regular")){
+            return "03A9F4";
+        }else if(theme.equals("lavender")){
+            return "9879D0";
+        }else if (theme.equals("orange")){
+            return "FA9C2A";
+        }else if (theme.equals("dark")){
+            return "0F0D14";
+        }else if (theme.equals("night-blue")){
+            return "213042";
+        }else if (theme.equals("dark-blue")){
+            return "12172A";
+        }else if (theme.equals("gnc")){
+            return "000054";
+        }else {
+            return "00B1E9";
+        }
+    }
+    //皮肤主题颜色的配置
+    public static String themeCorolAppCode(String appcode){
+        if (appcode.equals("bip")){
+            return "00B1E9";
+        }else if(appcode.equals("khalaspay")){
+            return "12172a";
+        }else {
+            return "FA9C2A";
+        }
+    }
 }

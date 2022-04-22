@@ -346,8 +346,8 @@ public class JavaScriptinterface{
     @JavascriptInterface
     public void statusBarColor(String uuid, String options) {
         Log.e("游戏中心页状态栏颜色","options="+options);
-        String colorString="#"+options;
-        HomeActivity.tv_stuasbar.setBackgroundColor(Color.parseColor(colorString));
+//        String colorString="#"+options;
+//        HomeActivity.tv_stuasbar.setBackgroundColor(Color.parseColor(colorString));
     }
 
     public void test() {
