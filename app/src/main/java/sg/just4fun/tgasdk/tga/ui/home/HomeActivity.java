@@ -284,7 +284,6 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap favicon) {
                     super.onPageStarted(view, url, favicon);
-                    rl_loading.setVisibility(View.GONE);
                 }
                 @Override
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -321,7 +320,7 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                 @Override
                 public void onPageFinished(WebView webView, String url) {
                     super.onPageFinished(webView, url);
-
+                    rl_loading.setVisibility(View.GONE);
                     Log.e("地址", "加载h5页面结束" + url + ", webview.orgurl=" + webView.getOriginalUrl() +", webview.url = " + webView.getUrl());
                 }
 /*@Override

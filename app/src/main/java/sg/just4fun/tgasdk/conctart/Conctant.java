@@ -123,7 +123,8 @@ public class Conctant {
         }else if (theme.equals("night-blue")){
             return "night-blue";
         }else if (theme.equals("dark-blue")){
-            return "khalaspay";
+            return "dark-blue";
+//            return "khalaspay";
         }else if (theme.equals("gnc")){
             return "gnc";
         }else {
