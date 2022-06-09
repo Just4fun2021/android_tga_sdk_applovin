@@ -285,7 +285,7 @@ public class ApplovinApiBean  implements TgaApiBean{
             ensureAdLoaded(UUID.randomUUID().toString(), TgaAdType.Reward.getName(), (ApplovinAdLoadCallback) aBoolean -> Log.d(TAG, "PRELOAD REWARD RESULT  " + aBoolean));
 
             ensureAdLoaded(UUID.randomUUID().toString(), TgaAdType.Banner.getName(), (ApplovinAdLoadCallback) aBoolean -> {
-                if(aBoolean){
+                if(!aBoolean){
                     adView.setVisibility( View.GONE );
                     adView.stopAutoRefresh();
                 }

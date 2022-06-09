@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-watch-v20\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout-watch-v20\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     }
 ]
