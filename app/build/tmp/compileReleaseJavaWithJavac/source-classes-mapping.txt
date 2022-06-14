@@ -83,6 +83,8 @@ sg/just4fun/tgasdk/adsdk/applovin/ApplovinApiBean.java
  sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean
  sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$1
  sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$2
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$3
+ sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean$4
 sg/just4fun/tgasdk/tga/utils/ScreenUtils.java
  sg.just4fun.tgasdk.tga.utils.ScreenUtils
 sg/just4fun/tgasdk/tga/view/textCh/LinkClickListener.java

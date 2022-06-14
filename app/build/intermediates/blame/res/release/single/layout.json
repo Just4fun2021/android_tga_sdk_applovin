@@ -1,322 +1,322 @@
 [
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_list_divider.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_list_divider.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_custom.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_alert_dialog_title_material.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_medium_template_1.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_medium_template_1.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_settings_list_item.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_settings_list_item.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_track_selection_dialog.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_track_selection_dialog.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_media_banner_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_media_banner_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_small_template_1.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_small_template_1.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_mrec_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_mrec_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item_right_detail.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_item_right_detail.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_leader_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_leader_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_cascading_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_cascading_menu_item_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_home.xml",
-        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\layout\\activity_home.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_section.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_section.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_web_view_game.xml",
-        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\layout\\activity_web_view_game.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_tooltip.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_tooltip.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_settings_list.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_settings_list.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_leader_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_leader_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_ffwd_button.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_ffwd_button.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_banner_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_banner_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_sub_settings_list_item.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_sub_settings_list_item.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\custom_dialog.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\applovin_native_ad_media_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\applovin_native_ad_media_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_rewind_button.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_rewind_button.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_section_centered.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_section_centered.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_banner_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_banner_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\mediation_debugger_multi_ad_activity.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\mediation_debugger_multi_ad_activity.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_media_custom.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\mediation_debugger_ad_unit_detail_activity.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\mediation_debugger_ad_unit_detail_activity.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_media.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_banner_icon_and_text_layout.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_banner_icon_and_text_layout.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_banner_icon_and_text_layout.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_action_mode_close_item_material.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_leader_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_leader_view.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\tgasdk_webview_layout.xml",
-        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\layout\\tgasdk_webview_layout.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\custom_dialog.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_cascading_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_cascading_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item_right_detail.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_item_right_detail.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_my.xml",
-        "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\layout\\activity_my.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_settings_list_item.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_settings_list_item.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_player_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_player_view.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_media_banner_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_media_banner_view.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\select_dialog_item_material.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_player_control_view.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_player_control_view.xml"
-    },
-    {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item_detail.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_item_detail.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_item_detail.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\ea4ba454ce3b2138bba6ee3585110f67\\appcompat-1.2.0-alpha02\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_leader_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_leader_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\mediation_debugger_ad_unit_detail_activity.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\mediation_debugger_ad_unit_detail_activity.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_tooltip.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_tooltip.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_small_template_1.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_small_template_1.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_banner_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_banner_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\tgasdk_webview_layout.xml",
+        "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\layout\\tgasdk_webview_layout.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_settings_list.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_settings_list.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_player_control_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_player_control_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_vertical_media_banner_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_vertical_media_banner_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_section_centered.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_section_centered.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_rewind_button.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_rewind_button.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_my.xml",
+        "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\layout\\activity_my.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_sub_settings_list_item.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_sub_settings_list_item.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_mrec_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_mrec_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_medium_template_1.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_medium_template_1.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\applovin_native_ad_media_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\applovin_native_ad_media_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_media_banner_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_media_banner_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_track_selection_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_track_selection_dialog.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_web_view_game.xml",
+        "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\layout\\activity_web_view_game.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_list_divider.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_list_divider.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6da8faa34ff1f8cbd7f98c815ebd7a4b\\media-1.2.1\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_styled_player_control_ffwd_button.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_styled_player_control_ffwd_button.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_section.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\list_section.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\a38b3bc803d50e61de40f37cd2f81c9c\\core-1.3.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\max_native_ad_banner_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\max_native_ad_banner_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\mediation_debugger_multi_ad_activity.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\layout\\mediation_debugger_multi_ad_activity.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\exo_player_view.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\layout\\exo_player_view.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\8aab2eb2eda288ff2b67286ee796dec7\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_home.xml",
+        "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\layout\\activity_home.xml"
     }
 ]

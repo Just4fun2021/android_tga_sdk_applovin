@@ -69,7 +69,6 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
     public static LollipopFixedWebView add_view;
     private String youxiUrl;
     private int isFrist = 0;
-    private LollipopFixedWebView newWebView;
     private String lang1;
     private ImageView img_loading;
     public static RelativeLayout rl_loading;
@@ -84,6 +83,7 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
     public static TextView tv_stuasbar;
     private String statusaBarColor;
     private int yssdk;
+    private HomeActivity activity;
 
     public static String urlEncode(String text) {
         try {
@@ -101,6 +101,7 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
         setContentView(R.layout.activity_web_view_game);
         NotchScreenManager.getInstance().setDisplayInNotch(HomeActivity.this);
         SdkActivityDele.addActivity(HomeActivity.this);
+        activity=this;
         img_loading = findViewById(R.id.img_loading);
         rl_loading = findViewById(R.id.rl_loading);
         add_view = findViewById(R.id.add_view1);
@@ -457,13 +458,24 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
             Log.e("gameCenterCallback=空了","gameCenterCallback=空了");
         }
 
-
         if (add_view != null) {
             add_view.stopLoading();
             add_view.removeAllViews();
             add_view.destroy();
             add_view = null;
         }
+    if (activity!=null){
+        activity = null;
+    }
+
+    if (rl_loading!=null){
+        rl_loading=null;
+    }
+        if (tv_stuasbar!=null){
+            tv_stuasbar=null;
+        }
+        SdkActivityDele.finishAllActivity();
+        SdkActivityDele.finishActivityList();
         super.onDestroy();
     }
 

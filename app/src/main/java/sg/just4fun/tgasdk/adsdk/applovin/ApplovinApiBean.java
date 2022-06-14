@@ -283,7 +283,7 @@ public class ApplovinApiBean  implements TgaApiBean{
             ensureAdLoaded(UUID.randomUUID().toString(), TgaAdType.Title.getName(), (ApplovinAdLoadCallback) aBoolean -> Log.d(TAG, "PRELOAD FULLSCREEN RESULT  " + aBoolean));
 
             ensureAdLoaded(UUID.randomUUID().toString(), TgaAdType.Reward.getName(), (ApplovinAdLoadCallback) aBoolean -> Log.d(TAG, "PRELOAD REWARD RESULT  " + aBoolean));
-
+//
 //            ensureAdLoaded(UUID.randomUUID().toString(), TgaAdType.Banner.getName(), (ApplovinAdLoadCallback) aBoolean -> {
 //                if(!aBoolean){
 //                    adView.setVisibility( View.GONE );
@@ -354,19 +354,19 @@ public class ApplovinApiBean  implements TgaApiBean{
 //                ensureAdLoaded(uuid, adTypeName, ready -> {
 //                    Log.d("eZx4Pox", "Banner is ready ? " + ready);
 //                    if (ready) {
-//                try{
-//
-//                    runOnUiThread(new Runnable() {
-//                     public void run() {
-//                         adView.setVisibility( View.VISIBLE );
-//                         adView.startAutoRefresh();
-//                     }
-//                 });
-//
-//
-//             }catch (Exception e){
-//                 Log.d("eZx4Pox", "tgaAdType  "+e.getMessage().toString() );
-//             }
+                try{
+
+                    runOnUiThread(new Runnable() {
+                     public void run() {
+                         adView.setVisibility( View.VISIBLE );
+                         adView.startAutoRefresh();
+                     }
+                 });
+
+
+             }catch (Exception e){
+                 Log.d("eZx4Pox", "tgaAdType  "+e.getMessage().toString() );
+             }
 
 //                    } else {
 //                        Log.e("eZx4Pox","no");
@@ -388,26 +388,26 @@ public class ApplovinApiBean  implements TgaApiBean{
     @Override
     public void showBannerAd(String uuid, String adTypeName, String paramsJson) {
         Log.d(TAG, "showBannerAd ...");
-//        try {
-//            ensureAdLoaded(uuid, adTypeName, ready -> {
-//                if (ready) {
-//                    onEvent(uuid, "onAdLoad");
-//                    runOnUiThread(new Runnable() {
-//                        public void run() {
-//
-//                            adView.setVisibility( View.VISIBLE );
-//                            adView.startAutoRefresh();
-//                        }
-//                    });
-//
-//                } else {
-//                    onEvent(uuid, "onError", toErrorExt("showAd", "SDK MODEL-" + MODEL_NAME + " is not preloaded"));
-//                }
-//            });
-////            TgaAdSdkUtils.runEventForUnsupportedType(webView, uuid, MODEL_NAME, adTypeName, TAG);
-//        } catch (Exception e) {
-//            Log.e(TAG, "Error Event Commit Failed", e);
-//        }
+        try {
+            ensureAdLoaded(uuid, adTypeName, ready -> {
+                if (ready) {
+                    onEvent(uuid, "onAdLoad");
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+
+                            adView.setVisibility( View.VISIBLE );
+                            adView.startAutoRefresh();
+                        }
+                    });
+
+                } else {
+                    onEvent(uuid, "onError", toErrorExt("showAd", "SDK MODEL-" + MODEL_NAME + " is not preloaded"));
+                }
+            });
+//            TgaAdSdkUtils.runEventForUnsupportedType(webView, uuid, MODEL_NAME, adTypeName, TAG);
+        } catch (Exception e) {
+            Log.e(TAG, "Error Event Commit Failed", e);
+        }
     }
 
     @Override

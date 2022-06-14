@@ -74,4 +74,14 @@ public class SdkActivityDele {
             activityList.clear();
         }
     }
+
+    /**
+     * 关闭所有的Activity
+     */
+    public static void finishActivityList() {
+        if (activityList != null) {
+            activityList=null;
+        }
+    }
+
 }
