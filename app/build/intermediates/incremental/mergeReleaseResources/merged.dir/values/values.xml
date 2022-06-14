@@ -835,7 +835,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">SDK</string>
+    <string name="app_name">notchlib</string>
     <string name="applovin_list_item_image_description">Displays more info about the list item.</string>
     <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
     <string name="exo_controls_cc_disabled_description">Enable subtitles</string>

@@ -55,7 +55,6 @@ layout activity_web_view_game
 layout tgasdk_webview_layout
 mipmap gif
 mipmap new_back
-string app_name
 string facebook_app_id
 string facebook_id
 string hello_blank_fragment
