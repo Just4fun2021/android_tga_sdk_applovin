@@ -442,6 +442,12 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
            add_view.destroy();
            add_view = null;
        }
+        if (  TGACallback.codeCallback!=null){
+            TGACallback.codeCallback=null;
+        }
+        if (  TGACallback.listener!=null){
+            TGACallback.listener=null;
+        }
         super.onDestroy();
     }
 

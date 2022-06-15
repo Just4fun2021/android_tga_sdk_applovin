@@ -468,14 +468,21 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
         activity = null;
     }
 
-    if (rl_loading!=null){
-        rl_loading=null;
-    }
         if (tv_stuasbar!=null){
             tv_stuasbar=null;
         }
         SdkActivityDele.finishAllActivity();
         SdkActivityDele.finishActivityList();
+        if (  TGACallback.codeCallback!=null){
+            TGACallback.codeCallback=null;
+        }
+        if (  TGACallback.listener!=null){
+            TGACallback.listener=null;
+        }
+        if (  TGACallback.outLoginCallback!=null){
+            TGACallback.outLoginCallback=null;
+        }
+
         super.onDestroy();
     }
 
@@ -499,6 +506,7 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
         WebStorage.getInstance().deleteAllData(); //清空WebView的localStorage
         SpUtils.clean(HomeActivity.this);
         SdkActivityDele.finishAllActivity();
+
     }
     private void getUserCodeInfo(Context context,String uuid,String code){
         String  fpId = Settings.System.getString(getContentResolver(), Settings.System.ANDROID_ID);
