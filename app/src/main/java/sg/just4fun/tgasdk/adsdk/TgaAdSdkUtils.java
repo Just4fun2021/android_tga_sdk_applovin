@@ -23,13 +23,12 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class TgaAdSdkUtils {
 
-    public static WebView tgaWebview;
     public static String tgaUrl;
 
 //    public static ShareDialog shareDialog;
 
     public static void registerTgaWebview(WebView newWebview) {
-        tgaWebview = newWebview;
+//        tgaWebview = newWebview;
     }
 
     private static Map<String, LinkedList<String>> caches = new ConcurrentHashMap<>();
@@ -285,7 +284,7 @@ public static class ScriptCodeRunnable implements Runnable {
     }
 
     public static void flushAllEvents() {
-        flushAllEvents(tgaWebview);
+//        flushAllEvents(tgaWebview);
     }
     public static void flushAllEvents(final WebView tgaWebview) {
         flushAllEvents(tgaWebview, "tgaad");

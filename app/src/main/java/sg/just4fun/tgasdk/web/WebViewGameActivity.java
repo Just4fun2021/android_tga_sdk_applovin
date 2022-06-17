@@ -461,7 +461,10 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
 
             ApplovingAdJob.apiBean=null;
         }
+        if ( ApplovinApiBean.webView!=null){
 
+            ApplovinApiBean.webView=null;
+        }
         SdkActivityDele.finishActivity(WebViewGameActivity.this);
         super.onDestroy();
     }

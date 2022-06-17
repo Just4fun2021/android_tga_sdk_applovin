@@ -8,6 +8,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
+import com.google.android.gms.common.util.Base64Utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
@@ -20,7 +21,7 @@ import org.json.JSONObject;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Base64;
+import android.util.Base64;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -902,8 +903,8 @@ public class TgaSdk {
       Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
       cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
       byte[] encryptData = cipher.doFinal(bytes1);
-
       //将加密后的数据bytes执行Base64Encode转化为base64字符串
-        return Base64.getEncoder().encodeToString(encryptData);
+      return Base64.encodeToString(encryptData, Base64.NO_WRAP);
+//        return Base64.getEncoder().encodeToString(encryptData);
     }
 }
