@@ -7,45 +7,45 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="16"
-9-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml
+9-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="28" />
-10-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml
+10-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:6:5-67
-12-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:6:22-64
+12-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:6:5-67
+12-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:6:22-64
 13
 14    <application
-14-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:8:5-26:19
+14-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:8:5-26:19
 15        android:allowBackup="true"
-15-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:9:9-35
+15-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:9:9-35
 16        android:hardwareAccelerated="true"
-16-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:10:9-43
+16-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:10:9-43
 17        android:supportsRtl="true"
-17-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:11:9-35
+17-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:11:9-35
 18        android:usesCleartextTraffic="true" >
-18-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:12:9-44
+18-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:12:9-44
 19        <activity
-19-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:14:9-20:20
+19-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:14:9-20:20
 20            android:name="sg.just4fun.tgasdk.tga.ui.home.HomeActivity"
-20-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:14:19-59
+20-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:14:19-59
 21            android:configChanges="orientation|keyboardHidden|screenSize"
-21-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:15:13-74
+21-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:15:13-74
 22            android:screenOrientation="portrait"
-22-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:16:13-49
+22-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:16:13-49
 23            android:windowSoftInputMode="stateVisible|adjustResize|stateAlwaysHidden" >
-23-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:17:13-86
+23-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:17:13-86
 24        </activity>
 25        <activity
-25-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:21:9-25:89
+25-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:21:9-25:89
 26            android:name="sg.just4fun.tgasdk.web.WebViewGameActivity"
-26-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:22:13-52
+26-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:22:13-52
 27            android:configChanges="orientation|keyboardHidden|screenSize"
-27-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:23:13-74
+27-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:23:13-74
 28            android:screenOrientation="portrait"
-28-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:24:13-49
+28-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:24:13-49
 29            android:windowSoftInputMode="stateVisible|adjustResize|stateAlwaysHidden" />
-29-->D:\android_sdk_applovin\app\src\main\AndroidManifest.xml:25:13-86
+29-->F:\android_tga_sdk_applovin\app\src\main\AndroidManifest.xml:25:13-86
 30    </application>
 31
 32</manifest>

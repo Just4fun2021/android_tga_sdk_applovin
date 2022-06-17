@@ -268,7 +268,7 @@ public class MyJavaScripface {
     public void goPage(String uuid,  String options) {
         Log.e("goPage","goPage");
         pageId++;
-        GoPageUtils.jumpGame(pageId,webview,context,uuid,options);
+        GoPageUtils.jumpGame(pageId,context,uuid,options);
     }
 
     @JavascriptInterface

@@ -1,158 +1,158 @@
 [
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_play.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_play.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_check_mark_borderless.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_check_mark_borderless.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_settings.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_settings.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fullscreen_enter.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_fullscreen_enter.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_forward.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_forward.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_one.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_one.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_x_mark.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_x_mark.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_vr.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_vr.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_chevron_right.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_chevron_right.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_subtitle_off.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_subtitle_off.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_audiotrack.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_audiotrack.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_rewind.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_rewind.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_rewind.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_rewind.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_chevron_left.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_chevron_left.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fastforward.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_fastforward.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_default_album_image.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_default_album_image.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_play_circle_filled.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_play_circle_filled.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_speed.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_speed.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_shuffle_on.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_shuffle_on.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_fullscreen_enter.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_fullscreen_enter.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_fullscreen_enter.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_subtitle_on.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_subtitle_on.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_settings.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_settings.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_pause_circle_filled.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_pause_circle_filled.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_speed.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_speed.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_disclosure_arrow.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_disclosure_arrow.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_stop.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_stop.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_check_mark_bordered.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_check_mark_bordered.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_skip_previous.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_skip_previous.png"
-    },
-    {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_shuffle_off.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_shuffle_off.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_shuffle_off.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_all.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_all.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_skip_previous.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_skip_previous.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_check.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_check.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_one.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_one.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_off.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_off.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_share.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_share.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_fullscreen_exit.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_fullscreen_exit.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_fullscreen_exit.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_next.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_next.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_subtitle_off.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_subtitle_off.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fullscreen_exit.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fullscreen_exit.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_fullscreen_exit.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_previous.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_check_mark_bordered.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_check_mark_bordered.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_all.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_all.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_previous.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_previous.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_skip_next.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_skip_next.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fullscreen_enter.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_fullscreen_enter.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_pause.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_pause.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_forward.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_forward.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_edit_mode_logo.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_edit_mode_logo.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_x_mark.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_x_mark.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_circular_play.png",
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_subtitle_on.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_subtitle_on.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_play_circle_filled.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_play_circle_filled.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_next.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_next.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_pause_circle_filled.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_pause_circle_filled.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_fastforward.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_fastforward.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_default_album_image.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_default_album_image.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_disclosure_arrow.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_disclosure_arrow.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_chevron_right.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_chevron_right.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_rewind.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_rewind.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_shuffle_on.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_shuffle_on.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_vr.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_vr.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_repeat_off.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_repeat_off.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_circular_play.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_circular_play.png"
     },
     {
-        "merged": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_share.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_share.png"
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_stop.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_stop.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_pause.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_pause.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_audiotrack.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_audiotrack.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_check.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_check.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_edit_mode_logo.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_edit_mode_logo.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_chevron_left.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_chevron_left.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\applovin_ic_check_mark_borderless.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4d5e33cd7a28d8577b2c9e43a03f54c2\\applovin-sdk-11.3.3\\res\\drawable-ldpi-v4\\applovin_ic_check_mark_borderless.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_skip_next.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_skip_next.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_ic_rewind.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_ic_rewind.png"
+    },
+    {
+        "merged": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_icon_play.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\drawable-ldpi-v4\\exo_icon_play.png"
     }
 ]

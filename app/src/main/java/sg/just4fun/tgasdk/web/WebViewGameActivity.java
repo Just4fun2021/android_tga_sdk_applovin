@@ -35,7 +35,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
-import com.smarx.notchlib.NotchScreenManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -47,14 +46,16 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import sg.just4fun.tgasdk.R;
 import sg.just4fun.tgasdk.adsdk.TgaAdSdkUtils;
+import sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean;
+import sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob;
 import sg.just4fun.tgasdk.callback.TGACallback;
 import sg.just4fun.tgasdk.conctart.SdkActivityDele;
-import sg.just4fun.tgasdk.modle.BipGameUserInfo;
-import sg.just4fun.tgasdk.modle.UserInFoBean;
 import sg.just4fun.tgasdk.tga.base.HttpBaseResult;
 import sg.just4fun.tgasdk.tga.base.JsonCallback;
 import sg.just4fun.tgasdk.tga.global.AppUrl;
+import sg.just4fun.tgasdk.tga.ui.home.HomeActivity;
 import sg.just4fun.tgasdk.tga.utils.SpUtils;
+import sg.just4fun.tgasdk.tga.view.notchscreentool.NotchScreenManager;
 import sg.just4fun.tgasdk.web.login.LoginUtils;
 
 public class WebViewGameActivity extends AppCompatActivity implements TGACallback.ShareCallback, TGACallback.CodeCallback {
@@ -63,7 +64,7 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
     public static LollipopFixedWebView add_view;
     public static WindowManager.LayoutParams lp;
     private String url;
-   private int isFrist=0;
+    private int isFrist=0;
     private LollipopFixedWebView newWebView;
     private String lang1;
     private ImageView img_loading;
@@ -79,7 +80,7 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
     private String statusaBarColor;
     private int yssdk;
     public static RelativeLayout relayout_web;
-
+    private WebViewGameActivity activity;
     public static String urlEncode(String text) {
         try{
             return URLEncoder.encode(text, "utf-8");
@@ -87,6 +88,7 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
             return text;
         }
     }
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @SuppressLint({"WrongViewCast", "ResourceType"})
@@ -105,7 +107,7 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
         tv_webtitle = findViewById(R.id.tv_webtitle);
         relayout = findViewById(R.id.relayout);
         tv_stuasbar = findViewById(R.id.tv_stuasbar);
-
+        activity=this;
 
 //
 //        if (Build.VERSION.SDK_INT >= 11) {
@@ -448,6 +450,19 @@ public class WebViewGameActivity extends AppCompatActivity implements TGACallbac
         if (  TGACallback.listener!=null){
             TGACallback.listener=null;
         }
+        rl_loading=null;
+        relayout_web=null;
+        tv_stuasbar=null;
+        if ( ApplovinApiBean.context!=null){
+
+            ApplovinApiBean.context=null;
+        }
+        if ( ApplovingAdJob.apiBean!=null){
+
+            ApplovingAdJob.apiBean=null;
+        }
+
+        SdkActivityDele.finishActivity(WebViewGameActivity.this);
         super.onDestroy();
     }
 

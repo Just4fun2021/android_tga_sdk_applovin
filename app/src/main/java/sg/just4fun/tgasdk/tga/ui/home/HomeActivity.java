@@ -35,7 +35,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.Response;
-import com.smarx.notchlib.NotchScreenManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -49,6 +48,8 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import sg.just4fun.tgasdk.R;
 import sg.just4fun.tgasdk.adsdk.TgaAdSdkUtils;
+import sg.just4fun.tgasdk.adsdk.applovin.ApplovinApiBean;
+import sg.just4fun.tgasdk.adsdk.applovin.ApplovingAdJob;
 import sg.just4fun.tgasdk.callback.TGACallback;
 import sg.just4fun.tgasdk.conctart.SdkActivityDele;
 import sg.just4fun.tgasdk.modle.BipGameUserInfo;
@@ -56,6 +57,7 @@ import sg.just4fun.tgasdk.tga.base.HttpBaseResult;
 import sg.just4fun.tgasdk.tga.base.JsonCallback;
 import sg.just4fun.tgasdk.tga.global.AppUrl;
 import sg.just4fun.tgasdk.tga.utils.SpUtils;
+import sg.just4fun.tgasdk.tga.view.notchscreentool.NotchScreenManager;
 import sg.just4fun.tgasdk.web.Conctart;
 import sg.just4fun.tgasdk.web.JavaScriptinterface;
 import sg.just4fun.tgasdk.web.LollipopFixedWebView;
@@ -451,6 +453,8 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
 
     @Override
     protected void onDestroy() {
+
+        rl_loading=null;
         if(TgaSdk.gameCenterCallback!=null){
 
             TgaSdk.gameCenterCallback.onGameCenterClosed();
@@ -464,10 +468,10 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
             add_view.destroy();
             add_view = null;
         }
-    if (activity!=null){
-        activity = null;
-    }
 
+        if (activity!=null){
+            activity = null;
+        }
         if (tv_stuasbar!=null){
             tv_stuasbar=null;
         }
@@ -482,7 +486,38 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
         if (  TGACallback.outLoginCallback!=null){
             TGACallback.outLoginCallback=null;
         }
+        if (  TgaSdk.initCallback!=null){
+            TgaSdk.initCallback=null;
+        }
+//        if (  TgaSdk.listener!=null){
+//            TgaSdk.listener=null;
+//        }
+        if ( ApplovinApiBean.context!=null){
 
+            ApplovinApiBean.context=null;
+        }
+        if ( ApplovingAdJob.apiBean!=null){
+
+            ApplovingAdJob.apiBean=null;
+        }
+        if ( ApplovinApiBean.webView!=null){
+
+            ApplovinApiBean.webView=null;
+        }
+
+        if ( TGACallback.langListener!=null){
+
+            TGACallback.langListener=null;
+        }
+
+        if ( TgaSdk.initCallback!=null){
+
+            TgaSdk.initCallback=null;
+        }
+        if ( TgaSdk.gameCenterCallback!=null){
+
+            TgaSdk.gameCenterCallback=null;
+        }
         super.onDestroy();
     }
 

@@ -266,7 +266,7 @@ public class JavaScriptinterface{
     public void goPage(String uuid,  String options) {
         pageId++;
         Log.e("goPage","goPage"+options+" uuid="+uuid+" pageId="+pageId);
-        GoPageUtils.jumpGame(pageId,webview,context,uuid,options);
+        GoPageUtils.jumpGame(pageId,context,uuid,options);
     }
 
     @JavascriptInterface

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\values-vi\\values-vi.xml",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-vi\\values-vi.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\34b98f323a126238fff1880ebb0e675d\\exoplayer-ui-2.13.3\\res\\values-vi\\values-vi.xml",

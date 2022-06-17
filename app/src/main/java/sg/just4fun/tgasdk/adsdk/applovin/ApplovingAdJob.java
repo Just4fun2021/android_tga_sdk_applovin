@@ -20,7 +20,7 @@ public class ApplovingAdJob implements MaxAdListener, MaxRewardedAdListener {
 
     private String uuid;
     private final String TAG = ApplovinApiBean.TAG;
-    private final ApplovinApiBean apiBean;
+    public static  ApplovinApiBean apiBean;
 //    private MaxInterstitialAd interstitialAd;
 //    private MaxRewardedAd rewardedAd;
     private final ApplovingAdPlacementType placementType;

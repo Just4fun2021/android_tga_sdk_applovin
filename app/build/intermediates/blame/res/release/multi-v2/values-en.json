@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-en\\values-en.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\res\\merged\\release\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\values-en\\strings.xml",
                     "from": {
                         "startLines": "2,4,7,8,10,11,9,5",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,10 +23,10 @@
             ]
         },
         {
-            "outputFile": "D:\\android_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-en\\values-en.xml",
+            "outputFile": "F:\\android_tga_sdk_applovin\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "D:\\android_sdk_applovin\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "source": "F:\\android_tga_sdk_applovin\\app\\src\\main\\res\\values-en\\strings.xml",
                     "from": {
                         "startLines": "2,4,7,8,10,11,9,5",
                         "startColumns": "4,4,4,4,4,4,4,4",

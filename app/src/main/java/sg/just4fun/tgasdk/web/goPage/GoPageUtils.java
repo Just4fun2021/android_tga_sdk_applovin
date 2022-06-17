@@ -24,16 +24,12 @@ import sg.just4fun.tgasdk.web.WebViewGameActivity;
 
 public class GoPageUtils {
     private static String uuid;
-    private static WebView tgawebView;
     public static Map<Integer, GoPageInfo> caches = new ConcurrentHashMap<>();
-    private static Activity context;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    public static void  jumpGame(int page,WebView tgawebView,Activity context, String uuid, String options) {
+    public static void  jumpGame(int page,Activity context, String uuid, String options) {
         Log.e("finishActivityEvents","jumpGamepage="+page);
-        GoPageUtils.tgawebView=tgawebView;
         GoPageUtils.uuid=uuid;
-        GoPageUtils.context=context;
         Gson gson = new Gson();
         boolean badJson = Conctant.isBadJson(options);
         if (badJson){

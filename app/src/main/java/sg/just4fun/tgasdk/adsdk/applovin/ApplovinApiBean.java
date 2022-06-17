@@ -49,8 +49,8 @@ public class ApplovinApiBean  implements TgaApiBean{
 
 
     private final String tgaUrl;
-    private final Activity context;
-    private final WebView webView;
+    public static Activity context;
+    public static WebView webView;
 
     private MaxInterstitialAd interstitialAd;
     private MaxInterstitialAd interstitialAd2;

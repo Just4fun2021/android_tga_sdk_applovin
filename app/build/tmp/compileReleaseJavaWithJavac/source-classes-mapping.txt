@@ -32,10 +32,21 @@ sg/just4fun/tgasdk/tga/ui/my/fragment/MyFragment.java
 sg/just4fun/tgasdk/tga/ui/home/model/MainBean.java
  sg.just4fun.tgasdk.tga.ui.home.model.MainBean
  sg.just4fun.tgasdk.tga.ui.home.model.MainBean$UserBean
+sg/just4fun/tgasdk/tga/view/notchscreentool/impl/OppoNotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.OppoNotchScreen
 sg/just4fun/tgasdk/tga/base/BaseFragment.java
  sg.just4fun.tgasdk.tga.base.BaseFragment
 sg/just4fun/tgasdk/modle/ShareConfigBean.java
  sg.just4fun.tgasdk.modle.ShareConfigBean
+sg/just4fun/tgasdk/tga/view/notchscreentool/INotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.INotchScreen
+ sg.just4fun.tgasdk.tga.view.notchscreentool.INotchScreen$HasNotchCallback
+ sg.just4fun.tgasdk.tga.view.notchscreentool.INotchScreen$NotchScreenCallback
+ sg.just4fun.tgasdk.tga.view.notchscreentool.INotchScreen$NotchScreenInfo
+ sg.just4fun.tgasdk.tga.view.notchscreentool.INotchScreen$NotchSizeCallback
+sg/just4fun/tgasdk/tga/view/notchscreentool/utils/RomUtils.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.utils.RomUtils
+ sg.just4fun.tgasdk.tga.view.notchscreentool.utils.RomUtils$RomInfo
 sg/just4fun/tgasdk/callback/TGACallback.java
  sg.just4fun.tgasdk.callback.TGACallback
  sg.just4fun.tgasdk.callback.TGACallback$CodeCallback
@@ -52,6 +63,8 @@ sg/just4fun/tgasdk/tga/view/immersionbar/SimpleImmersionProxy.java
  sg.just4fun.tgasdk.tga.view.immersionbar.SimpleImmersionProxy
 sg/just4fun/tgasdk/modle/GameinfoBean.java
  sg.just4fun.tgasdk.modle.GameinfoBean
+sg/just4fun/tgasdk/tga/view/notchscreentool/impl/MiNotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.MiNotchScreen
 sg/just4fun/tgasdk/tga/base/SimpleResponse.java
  sg.just4fun.tgasdk.tga.base.SimpleResponse
 sg/just4fun/tgasdk/modle/AdConfigBean.java
@@ -101,6 +114,9 @@ sg/just4fun/tgasdk/tga/view/textCh/LinkMovementMethodEx.java
  sg.just4fun.tgasdk.tga.view.textCh.LinkMovementMethodEx
 sg/just4fun/tgasdk/tga/view/immersionbar/SimpleImmersionFragment.java
  sg.just4fun.tgasdk.tga.view.immersionbar.SimpleImmersionFragment
+sg/just4fun/tgasdk/tga/view/notchscreentool/impl/AndroidPNotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.AndroidPNotchScreen
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.AndroidPNotchScreen$1
 sg/just4fun/tgasdk/tga/view/promptlibrary/PromptView.java
  sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView
  sg.just4fun.tgasdk.tga.view.promptlibrary.PromptView$1
@@ -130,6 +146,9 @@ sg/just4fun/tgasdk/tga/ui/home/HomeActivity.java
  sg.just4fun.tgasdk.tga.ui.home.HomeActivity$5
 sg/just4fun/tgasdk/tga/view/immersionbar/FlymeOSStatusBarFontUtils.java
  sg.just4fun.tgasdk.tga.view.immersionbar.FlymeOSStatusBarFontUtils
+sg/just4fun/tgasdk/tga/view/notchscreentool/NotchScreenManager.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.NotchScreenManager
+ sg.just4fun.tgasdk.tga.view.notchscreentool.NotchScreenManager$1
 sg/just4fun/tgasdk/tga/ui/my/fragment/MyJavaScripface.java
  sg.just4fun.tgasdk.tga.ui.my.fragment.MyJavaScripface
 sg/just4fun/tgasdk/tga/view/NoScrollViewPager.java
@@ -186,6 +205,8 @@ sg/just4fun/tgasdk/tga/view/immersionbar/OSUtils.java
  sg.just4fun.tgasdk.tga.view.immersionbar.OSUtils
 sg/just4fun/tgasdk/adsdk/TgaJsonSample.java
  sg.just4fun.tgasdk.adsdk.TgaJsonSample
+sg/just4fun/tgasdk/tga/view/notchscreentool/impl/HuaweiNotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.HuaweiNotchScreen
 sg/just4fun/tgasdk/web/Conctart.java
  sg.just4fun.tgasdk.web.Conctart
 sg/just4fun/tgasdk/web/TgaSdk.java
@@ -262,8 +283,12 @@ sg/just4fun/tgasdk/tga/view/immersionbar/ImmersionBar.java
  sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$1
  sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$2
  sg.just4fun.tgasdk.tga.view.immersionbar.ImmersionBar$3
+sg/just4fun/tgasdk/tga/view/notchscreentool/impl/VivoNotchScreen.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.impl.VivoNotchScreen
 sg/just4fun/tgasdk/modle/GooglePayInfoBean.java
  sg.just4fun.tgasdk.modle.GooglePayInfoBean
+sg/just4fun/tgasdk/tga/view/notchscreentool/utils/ScreenUtil.java
+ sg.just4fun.tgasdk.tga.view.notchscreentool.utils.ScreenUtil
 sg/just4fun/tgasdk/tga/ui/home/model/TgaSdkUserInFo.java
  sg.just4fun.tgasdk.tga.ui.home.model.TgaSdkUserInFo
 sg/just4fun/tgasdk/web/goPage/StatusaAndNavigationModel.java
