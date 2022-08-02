@@ -323,8 +323,14 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                 @Override
                 public void onPageFinished(WebView webView, String url) {
                     super.onPageFinished(webView, url);
-                    rl_loading.setVisibility(View.GONE);
-                    Log.e("地址", "加载h5页面结束" + url + ", webview.orgurl=" + webView.getOriginalUrl() +", webview.url = " + webView.getUrl());
+                    try
+                    {
+                        if (rl_loading != null) rl_loading.setVisibility(View.GONE);
+                        Log.e("地址", "加载h5页面结束" + url + ", webview.orgurl=" + webView.getOriginalUrl() +", webview.url = " + webView.getUrl());
+                    }catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
                 }
 /*@Override
             public void onPageFinished(WebView view, String url) {

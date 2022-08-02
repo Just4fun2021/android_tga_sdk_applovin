@@ -271,6 +271,7 @@ public class ApplovinApiBean  implements TgaApiBean{
 
     @Override
     public void initSdk() {
+        if (context == null)return;
         AppLovinSdk appLovinSdk = AppLovinSdk.getInstance( context );
         appLovinSdk.setMediationProvider( "max" );
         appLovinSdk.getSettings().setVerboseLogging(true);
