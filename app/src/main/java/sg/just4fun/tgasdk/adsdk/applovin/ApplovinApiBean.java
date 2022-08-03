@@ -133,6 +133,7 @@ public class ApplovinApiBean  implements TgaApiBean{
 
     public void ensureAdLoaded(String uuid, String adTypeName, Consumer<Boolean> callback) {
         Log.d(TAG, "ensureAdLoaded(" + uuid + ", " + adTypeName +")");
+        if (context == null)return;
         ApplovingAdPlacementType tgaAdType = toApplovingAdPlacementType(adTypeName);
         if(tgaAdType == ApplovingAdPlacementType.Other) {
             try {
