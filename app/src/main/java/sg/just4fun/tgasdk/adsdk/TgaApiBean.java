@@ -8,7 +8,7 @@ package sg.just4fun.tgasdk.adsdk;
 public interface TgaApiBean {
 
     void initSdk();
-    void showAd(final String uuid, String adTypeName);
+    void showAd(final String uuid, String adTypeName, String placement);
     void showBannerAd(final String uuid, String adTypeName, String paramsJson);
     void hideBannerAd(final String uuid, String adTypeName);
     boolean isInitiated();

@@ -302,7 +302,7 @@ public class ApplovinApiBean  implements TgaApiBean{
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
-    public void showAd(String uuid, String adTypeName) {
+    public void showAd(String uuid, String adTypeName, String placement) {
         Log.d("fak123","showAd"+System.currentTimeMillis());
         Log.d("eZx4Pox", "showAd"+System.currentTimeMillis());
         Log.d(TAG, "showAd(" + uuid + ", " + adTypeName +")");
@@ -323,7 +323,7 @@ public class ApplovinApiBean  implements TgaApiBean{
                     if(ready) {
                         interstitialAdJob.setUuid(uuid);
                         onEvent(uuid, "onAdLoad");
-                        interstitialAd.showAd();
+                        interstitialAd.showAd(placement);
                     } else {
                         onEvent(uuid, "onError", toErrorExt("showAd", "SDK MODEL-" + MODEL_NAME +" is not preloaded"));
                     }
@@ -334,7 +334,7 @@ public class ApplovinApiBean  implements TgaApiBean{
                     if(ready) {
                         interstitialAdJob2.setUuid(uuid);
                         onEvent(uuid, "onAdLoad");
-                        interstitialAd2.showAd();
+                        interstitialAd2.showAd(placement);
                     } else {
                         onEvent(uuid, "onError", toErrorExt("showAd", "SDK MODEL-" + MODEL_NAME +" is not preloaded"));
                     }
@@ -345,7 +345,7 @@ public class ApplovinApiBean  implements TgaApiBean{
                     if (ready) {
                         rewardedAdJob.setUuid(uuid);
                         onEvent(uuid, "onAdLoad");
-                        rewardedAd.showAd();
+                        rewardedAd.showAd(placement);
                     } else {
                         onEvent(uuid, "onError", toErrorExt("showAd", "SDK MODEL-" + MODEL_NAME + " is not preloaded"));
                     }

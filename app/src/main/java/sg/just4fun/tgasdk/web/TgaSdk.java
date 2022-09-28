@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.common.util.Base64Utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -25,6 +27,7 @@ import java.util.ArrayList;
 
 import android.util.Base64;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -94,6 +97,9 @@ public class TgaSdk
     public static String theme1;
     private static String theme;
     public static String theme2;
+    public static HashMap<String, JSONObject> urlParam = new HashMap<>();
+//    public static JSONObject gameCenterAppParam;
+//    public static JSONObject gameCenterUserParam;
 
     private TgaSdk()
     {
@@ -130,6 +136,7 @@ public class TgaSdk
         Log.e(TGA, "linitCallback是不是空了=" + initCallback);
         TgaSdk.appPaymentKey = appPaymentKey;
         Log.e(TGA, "appPaymentKey是不是空了=" + appPaymentKey);
+        MobileAds.initialize(mContext);
 //       获取用户配置表
         getUserInfo(appKey, mContext);
     }
@@ -556,9 +563,12 @@ public class TgaSdk
         String bipTxnId = SpUtils.getString(mContext, "bipTxnId", "");
         String bipToken = SpUtils.getString(mContext, "bipToken", "");
         String reBipToken = SpUtils.getString(mContext, "reBipToken", "");
+        //拼接参数
+        JSONObject userParam = new JSONObject();
+        JSONObject appParam = new JSONObject();
+        String version = Conctant.getVersion(mContext);
         if (url == null || url.equals(""))
         {
-            String version = Conctant.getVersion(mContext);
             if (isSuccess == 1)
             {
                 Log.e(TGA, "isSuccess==1");
@@ -567,11 +577,26 @@ public class TgaSdk
                     Log.e(TGA, "TgaSdk.listener不为空");
 //                    String userInfo = TgaSdk.listener.getAuthCode();
                     String userInfo = TgaSdk.listener.getUserInfo();
+
                     if (bipToken == null || bipToken.equals(""))
                     {
                         Log.e(TGA, "bipToken=" + bipToken);
 //                                  "&txnId=1&msisdn=1"+
-                        url = TgaSdk.gameCentreUrl + "?appId=" + TgaSdk.appId + "&theme=" + theme2 + "&navigationbar=" + navigationbar + "&token=" + bipToken + "&refresh-token=" + reBipToken;//无底部
+                        url = TgaSdk.gameCentreUrl;// + "?appId=" + TgaSdk.appId + "&theme=" + theme2 + "&navigationbar=" + navigationbar + "&token=" + bipToken + "&refresh-token=" + reBipToken;//无底部
+                        try
+                        {
+                            appParam.put("appId", TgaSdk.appId);
+                            appParam.put("theme", theme2);
+                            appParam.put("navigationBar", navigationbar);
+                            //
+                            userParam.put("token", bipToken);
+                            userParam.put("refresh-token", reBipToken);
+
+                        }catch (Exception e){e.printStackTrace();}
+
+                        urlParam.put("app", appParam);
+                        urlParam.put("user", userParam);
+
                         theme1 = "#" + theme1;
                         Intent intent = new Intent(context, HomeActivity.class);
                         intent.putExtra("url", url);
@@ -604,10 +629,45 @@ public class TgaSdk
 
                         if (schemeQuery != null && !schemeQuery.equals(""))
                         {
-                            url = TgaSdk.gameCentreUrl + "?" + txnid + "&theme=" + theme2 + "&" + schemeQuery + "&navigationbar=" + navigationbar + "&appId=" + TgaSdk.appId + "&nickname=" + bipName + msisid + "&token=" + bipToken + "&refresh-token=" + reBipToken + "&appversion=" + version + "&avatar=" + bipHeader;//无底部
+                            url = TgaSdk.gameCentreUrl;// + "?" + txnid + "&theme=" + theme2 + "&" + schemeQuery + "&navigationbar=" + navigationbar + "&appId=" + TgaSdk.appId + "&nickname=" + bipName + msisid + "&token=" + bipToken + "&refresh-token=" + reBipToken + "&appversion=" + version + "&avatar=" + bipHeader;//无底部
+                            try
+                            {
+                                userParam.put("txnId", bipTxnId);
+                                userParam.put("nickname", bipName);
+                                userParam.put("msisdn", bipTxnId);
+                                userParam.put("token", bipToken);
+                                userParam.put("refresh-token", reBipToken);
+                                userParam.put("avatar", bipHeader);
+                                //
+                                appParam.put("theme", theme2);
+                                appParam.put("schemeQuery", schemeQuery);
+                                appParam.put("navigationBar", navigationbar);
+                                appParam.put("appId", TgaSdk.appId);
+                                appParam.put("appversion", version);
+
+                                urlParam.put("app", appParam);
+                                urlParam.put("user", userParam);
+                            }catch (Exception e){e.printStackTrace();}
                         } else
                         {
-                            url = TgaSdk.gameCentreUrl + "?" + txnid + "&theme=" + theme2 + "&appId=" + TgaSdk.appId + "&navigationbar=" + navigationbar + "&nickname=" + bipName + "&token=" + bipToken + "&refresh-token=" + reBipToken + msisid + "&appversion=" + version + "&avatar=" + bipHeader;//无底部
+                            url = TgaSdk.gameCentreUrl;// + "?" + txnid + "&theme=" + theme2 + "&appId=" + TgaSdk.appId + "&navigationbar=" + navigationbar + "&nickname=" + bipName + "&token=" + bipToken + "&refresh-token=" + reBipToken + msisid + "&appversion=" + version + "&avatar=" + bipHeader;//无底部
+                            try
+                            {
+                                userParam.put("txnId", bipTxnId);
+                                userParam.put("nickname", bipName);
+                                userParam.put("msisdn", bipTxnId);
+                                userParam.put("token", bipToken);
+                                userParam.put("refresh-token", reBipToken);
+                                userParam.put("avatar", bipHeader);
+                                //
+                                appParam.put("theme", theme2);
+                                appParam.put("navigationBar", navigationbar);
+                                appParam.put("appId", TgaSdk.appId);
+                                appParam.put("appversion", version);
+
+                                urlParam.put("app", appParam);
+                                urlParam.put("user", userParam);
+                            }catch (Exception e){e.printStackTrace();}
                         }
                         theme1 = "#" + theme1;
                         Intent intent = new Intent(context, HomeActivity.class);
@@ -638,6 +698,24 @@ public class TgaSdk
             }
         }
         theme1 = "#" + theme1;
+        try
+        {
+            userParam.put("txnId", bipTxnId);
+            userParam.put("nickname", bipName);
+            userParam.put("msisdn", bipTxnId);
+            userParam.put("token", bipToken);
+            userParam.put("refresh-token", reBipToken);
+            userParam.put("avatar", bipHeader);
+            //
+            appParam.put("theme", theme1);
+            appParam.put("navigationBar", navigationbar);
+            appParam.put("appId", TgaSdk.appId);
+            appParam.put("appversion", version);
+
+            urlParam.put("app", appParam);
+            urlParam.put("user", userParam);
+        }catch (Exception e){e.printStackTrace();}
+
         Intent intent = new Intent(context, HomeActivity.class);
         intent.putExtra("url", url);
         intent.putExtra("yssdk", 1);
@@ -675,10 +753,14 @@ public class TgaSdk
         goPage(context, theme, url, true, gameid, navigationbar);
     }
 
-    //跳转游戏中心
-    public static void openGameCenter(Context context, String theme2, boolean navigationbar, TGACallback.GameCenterCallback gameCenterCallback)
+    public static void openGameCenter(Context context, String theme2, boolean showCenterNavBar, TGACallback.GameCenterCallback gameCenterCallback)
     {
+        openGameCenter(context, theme2, showCenterNavBar, "", gameCenterCallback);
+    }
 
+    //跳转游戏中心
+    public static void openGameCenter(Context context, String theme2, boolean showCenterNavBar, String secUrl, TGACallback.GameCenterCallback gameCenterCallback)
+    {
         TgaSdk.gameCenterCallback = gameCenterCallback;
         if (theme2 != null && !theme2.equals(""))
         {
@@ -687,7 +769,44 @@ public class TgaSdk
         {
             theme = theme2;
         }
-        goPage(context, theme, "", true, "", navigationbar);
+        goPage(context, theme, "", true, "", showCenterNavBar);
+        if (!TextUtils.isEmpty(secUrl))
+        {
+            String bipHeader = SpUtils.getString(mContext, "bipHeader", "");
+            String bipName = SpUtils.getString(mContext, "bipName", "");
+            String bipTxnId = SpUtils.getString(mContext, "bipTxnId", "");
+            String bipToken = SpUtils.getString(mContext, "bipToken", "");
+            String reBipToken = SpUtils.getString(mContext, "reBipToken", "");
+            String version = Conctant.getVersion(mContext);
+            JSONObject userParam = new JSONObject();
+            JSONObject appParam = new JSONObject();
+            try
+            {
+                userParam.put("txnId", bipTxnId);
+                userParam.put("nickname", bipName);
+                userParam.put("msisdn", bipTxnId);
+                userParam.put("token", bipToken);
+                userParam.put("refresh-token", reBipToken);
+                userParam.put("avatar", bipHeader);
+                //
+                appParam.put("theme", theme1);
+                appParam.put("navigationBar", showCenterNavBar);
+                appParam.put("appId", TgaSdk.appId);
+                appParam.put("appversion", version);
+
+                urlParam.put("app", appParam);
+                urlParam.put("user", userParam);
+            }catch (Exception e){e.printStackTrace();}
+
+            Intent intent = new Intent(context, WebViewGameActivity.class);
+            intent.putExtra("url", secUrl);
+            intent.putExtra("gopag",1);
+            intent.putExtra("navigationBar", showCenterNavBar);
+            intent.putExtra("statusaBarColor",theme1);
+            intent.putExtra("yssdk",1);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+        }
     }
 
     //跳转游戏中心
@@ -1044,6 +1163,7 @@ public class TgaSdk
         return "";
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public static String toEncryptData(String jsonUserInfo, String appSecret) throws Exception
     {
         //将当前用户的信息封装为json格式

@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.OrientationEventListener;
 import android.view.View;
@@ -63,39 +64,43 @@ import sg.just4fun.tgasdk.web.goPage.GoPageUtils;
 
 import static com.lzy.okgo.utils.HttpUtils.runOnUiThread;
 
-public class JavaScriptinterface{
+public class JavaScriptinterface
+{
     // The Activity that load the webview with this interface instance.
 
     Activity context;
-    private String TGA="JavaScriptinterface";
+    private String TGA = "JavaScriptinterface";
 
     String tgaUrl;
-//    TTAdNative ttAdNative = null;
-    private final String FB_PLACEMENT_ID= "503651173800345_658237148341746";
+    //    TTAdNative ttAdNative = null;
+    private final String FB_PLACEMENT_ID = "503651173800345_658237148341746";
     private WebView webview;
-//    InterstitialAd interstitialAd = null;
+    //    InterstitialAd interstitialAd = null;
 //    private BillingClient billingClient = null;
     private String payUuid;
     private String orderId;
     private String price;
-    private static List<GooglePayInfo> infoList=new ArrayList<>();
+    private static List<GooglePayInfo> infoList = new ArrayList<>();
     private static String ggOrder;
-    private int isscu=0;
-    private int cishu=5;
+    private int isscu = 0;
+    private int cishu = 5;
     private String metaDataStringApplication1;
     private OrientationEventListener mOrientationListener;
-    private String TAG="JavaScriptinterface";
+    private String TAG = "JavaScriptinterface";
 
     //    public static WebView webView;
-    public JavaScriptinterface(Activity context, String tgaUrl){
-        this.context= context;
+    public JavaScriptinterface(Activity context, String tgaUrl)
+    {
+        this.context = context;
 //      this.webview = webview;
         this.tgaUrl = tgaUrl;
 
     }
+
     private int pageId;
 
-    public void registerWebview(@NonNull WebView webview) {
+    public void registerWebview(@NonNull WebView webview)
+    {
         webview.addJavascriptInterface(this, "TgaAndroid");
         this.webview = webview;
         TgaAdSdkUtils.registerTgaWebview(webview);
@@ -104,7 +109,8 @@ public class JavaScriptinterface{
     TgaApiBean vungle;
     TgaApiBean apploving;
 
-    public void init(@NonNull WebView webview) {
+    public void init(@NonNull WebView webview)
+    {
 //        try{
 //            vungle = new VungleApiBean(context, webview, tgaUrl);
 //            vungle.initSdk();
@@ -112,36 +118,45 @@ public class JavaScriptinterface{
 //
 //        }
 
-        if (TgaSdk.appConfigbeanList==null){
-            TgaSdk.getUserInfo(TgaSdk.appPaymentKey,context);
+        if (TgaSdk.appConfigbeanList == null)
+        {
+            TgaSdk.getUserInfo(TgaSdk.appPaymentKey, context);
         }
 
-          metaDataStringApplication1 = Conctart.getMetaDataStringApplication(context,"applovin.sdk.key", "");
+        metaDataStringApplication1 = Conctart.getMetaDataStringApplication(context, "applovin.sdk.key", "");
         Log.d("tgasdk-js", "Apploving Init Begin");
-        Log.d(TGA, "apploving="+metaDataStringApplication1);
+        Log.d(TGA, "apploving=" + metaDataStringApplication1);
 
-        if (!metaDataStringApplication1.equals("")){
+        if (!metaDataStringApplication1.equals(""))
+        {
             AppLovinAdPlacementConfig appLovinAdPlacementConfig = new AppLovinAdPlacementConfig();
-            try {
-                if(TgaSdk.applovnIdConfig!=null){
+            try
+            {
+                if (TgaSdk.applovnIdConfig != null)
+                {
                     JSONObject jsonObject = new JSONObject(TgaSdk.applovnIdConfig);
                     appLovinAdPlacementConfig.fromJson(jsonObject);
                 }
 
-            } catch (JSONException e) {
+            } catch (JSONException e)
+            {
                 e.printStackTrace();
-            } catch (Exception e) {
+            } catch (Exception e)
+            {
                 e.printStackTrace();
             }
 
-            try{
-                if(TgaSdk.applovnIdConfig!=null){
-                    Log.e("apploving初始化","apploving初始化");
+            try
+            {
+                if (TgaSdk.applovnIdConfig != null)
+                {
+                    Log.e("apploving初始化", "apploving初始化");
                     apploving = new ApplovinApiBean(context, webview, tgaUrl);
                     apploving.initSdk();
-                    AppLovinSdk.getInstance( context ).getSettings().setVerboseLogging( true );
+                    AppLovinSdk.getInstance(context).getSettings().setVerboseLogging(true);
                 }
-            } catch(Exception e) {
+            } catch (Exception e)
+            {
                 Log.e("tgasdk-js", "Apploving Init Error", e);
 
             }
@@ -151,20 +166,24 @@ public class JavaScriptinterface{
     }
 
     @JavascriptInterface
-    public String getTgaSdkVersion(String type){
+    public String getTgaSdkVersion(String type)
+    {
         return "0.1";
     }
 
     @JavascriptInterface
-    public void facebookeLogin() {
-        Log.d("FB","facebookeLogin");
+    public void facebookeLogin()
+    {
+        Log.d("FB", "facebookeLogin");
     }
 
     @JavascriptInterface
-    public void logout(String uuid,String options) {
+    public void logout(String uuid, String options)
+    {
 
-        Log.d("是不是","logout");
-        if(TgaSdk.listener != null) {
+        Log.d("是不是", "logout");
+        if (TgaSdk.listener != null)
+        {
             TgaSdk.listener.quitLogin(context);
         }
         SpUtils.clean(TgaSdk.mContext);
@@ -172,42 +191,53 @@ public class JavaScriptinterface{
     }
 
 
-
     @JavascriptInterface
-    public void appPayment(String orderId, String productId, String callback, String type) {
-        Log.d( "INAPP PAY",  "orderId=" + orderId + ",productId=" + productId + "type=" + type);
+    public void appPayment(String orderId, String productId, String callback, String type)
+    {
+        Log.d("INAPP PAY", "orderId=" + orderId + ",productId=" + productId + "type=" + type);
 //        tryConnectToGooglePlayAndDoPurchase(orderId, productId, callback);
     }
 
 
-
     @JavascriptInterface
-    public void showVungleAd(String uuid, String adType) {
-        vungle.showAd(uuid, adType);
+    public void showVungleAd(String uuid, String adType, String placement)
+    {
+        vungle.showAd(uuid, adType, placement);
     }
 
     @JavascriptInterface
-    public void showApplovinAd(String uuid, String adType) {
-        Log.e("apploving初始化","showApplovinAd");
-        Log.d(apploving.getTag(), "showApplovingAd(" + uuid + "," + adType + ")");
-        Log.d("eZx4Pox", "showApplovingAd(" + uuid + "," + adType + ")");
-        if(!metaDataStringApplication1.equals("")){
-            Log.e("apploving初始化","metaDataStringApplication1");
-            if (TgaSdk.applovnIdConfig!=null){
-                apploving.showAd(uuid, adType);
-                Log.e("apploving初始化","TgaSdk.applovnIdConfig");
-            }
+    public void showApplovinAd(String uuid, String option/*String adType, String placement*/)
+    {
+//        Log.e("apploving初始化", "showApplovinAd");
+//        Log.d(apploving.getTag(), "showApplovingAd(" + uuid + "," + adType + ")");
+//        Log.d("eZx4Pox", "showApplovingAd(" + uuid + "," + adType + ")");
+        if (!metaDataStringApplication1.equals("") && !TextUtils.isEmpty(option))
+        {
+            try
+            {
+                JSONObject json = new JSONObject(option);
+                Log.e("apploving初始化", "metaDataStringApplication1");
+                if (TgaSdk.applovnIdConfig != null)
+                {
+                    apploving.showAd(uuid, json.getString("adType"), json.getString("name"));
+                    Log.e("apploving初始化", "TgaSdk.applovnIdConfig");
+                }
+            }catch (Exception e){}
         }
 
     }
-//    切换横屏
+
+    //    切换横屏
     @JavascriptInterface
-    public void HorizontalScreen(String uuid, String options) {
-        Log.e("HorizontalScreen","横屏options="+options);
+    public void HorizontalScreen(String uuid, String options)
+    {
+        Log.e("HorizontalScreen", "横屏options=" + options);
         context.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
-        runOnUiThread(new Runnable() {
-            public void run() {
-                WebViewGameActivity.full(false,context);
+        runOnUiThread(new Runnable()
+        {
+            public void run()
+            {
+                WebViewGameActivity.full(false, context);
             }
         });
         WebViewGameActivity.tv_stuasbar.setVisibility(View.GONE);
@@ -216,168 +246,210 @@ public class JavaScriptinterface{
 
     //    切换竖屏
     @JavascriptInterface
-    public void VerticalScreen(String uuid, String options) {
-        Log.e("VerticalScreen","竖屏options="+options);
+    public void VerticalScreen(String uuid, String options)
+    {
+        Log.e("VerticalScreen", "竖屏options=" + options);
         context.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //切换竖屏
 
     }
 
     @JavascriptInterface
-    public void showApplovinBannerAd(String uuid, String params) {
-        Log.e("apploving初始化","showApplovinBannerAd");
+    public void showApplovinBannerAd(String uuid, String params, String placement)
+    {
+        Log.e("apploving初始化", "showApplovinBannerAd");
         Log.d(apploving.getTag(), "showApplovinBannerAd(" + uuid + "," + params + ")");
 //        Log.d("eZx4Pox", "showApplovinBannerAd(" + uuid + "," + params + ")");
 //        apploving.showBannerAd(uuid, "banner", params);
-        if(!metaDataStringApplication1.equals("")){
-            if (TgaSdk.applovnIdConfig!=null){
-                apploving.showAd(uuid, "banner");
+        if (!metaDataStringApplication1.equals(""))
+        {
+            if (TgaSdk.applovnIdConfig != null)
+            {
+                apploving.showAd(uuid, "banner", placement);
             }
         }
     }
 
     @JavascriptInterface
-    public void hideApplovingBannerAd(String uuid, String options) {
-        Log.e("hideApplovingBannerAd","广告"+options);
-        if(!metaDataStringApplication1.equals("")){
-            if (TgaSdk.applovnIdConfig!=null){
-                apploving.hideBannerAd(uuid,"banner");
+    public void hideApplovingBannerAd(String uuid, String options)
+    {
+        Log.e("hideApplovingBannerAd", "广告" + options);
+        if (!metaDataStringApplication1.equals(""))
+        {
+            if (TgaSdk.applovnIdConfig != null)
+            {
+                apploving.hideBannerAd(uuid, "banner");
             }
         }
     }
 
     @JavascriptInterface
-    public void showVungleBannerAd(String uuid, String params) {
+    public void showVungleBannerAd(String uuid, String params)
+    {
         vungle.showBannerAd(uuid, "banner", params);
     }
 
     @JavascriptInterface
-    public void hideVungleBannerAd(String uuid, String options) {
-        vungle.hideBannerAd(uuid,"");
+    public void hideVungleBannerAd(String uuid, String options)
+    {
+        vungle.hideBannerAd(uuid, "");
 
     }
+
     @JavascriptInterface
-    public void openBrowser(String uuid, String options) {
+    public void openBrowser(String uuid, String options)
+    {
         Uri uri = Uri.parse(options);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         context.startActivity(intent);
     }
+
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @JavascriptInterface
-    public void goPage(String uuid,  String options) {
+    public void goPage(String uuid, String options)
+    {
         pageId++;
-        Log.e("goPage","goPage"+options+" uuid="+uuid+" pageId="+pageId);
-        GoPageUtils.jumpGame(pageId,context,uuid,options);
+        Log.e("goPage", "goPage" + options + " uuid=" + uuid + " pageId=" + pageId);
+        GoPageUtils.jumpGame(pageId, context, uuid, options);
     }
 
     @JavascriptInterface
-    public void finishPage(String uuid,  String options) {
-        Log.e("goPage","关闭");
+    public void finishPage(String uuid, String options)
+    {
+        Log.e("goPage", "关闭");
         context.finish(); //返回键点击
 
 
     }
+
     @JavascriptInterface
-    public void getPayAppid(String uuid,  String options) {
-        Log.e("googlePayWay","getPayAppid"+options);
+    public void getPayAppid(String uuid, String options)
+    {
+        Log.e("googlePayWay", "getPayAppid" + options);
     }
-//sdk支付
+
+    //sdk支付
     @JavascriptInterface
-    public void sdkPay(String uuid,  String options) {
-        Log.e("googlePayWay","options="+options);
+    public void sdkPay(String uuid, String options)
+    {
+        Log.e("googlePayWay", "options=" + options);
     }
-//    app自身支付
+
+    //    app自身支付
     @JavascriptInterface
-    public void appPay(String uuid,  String options) {
-        Log.e("appPay","options"+options);
+    public void appPay(String uuid, String options)
+    {
+        Log.e("appPay", "options" + options);
     }
 
     //游客支付回调
     @JavascriptInterface
-    public void payBacll(String uuid,  String options) {
-
-    }
-    @JavascriptInterface
-    public void inAppShare(String uuid,  String options) {
+    public void payBacll(String uuid, String options)
+    {
 
     }
 
     @JavascriptInterface
-    public void thirdPartyShare(String uuid,  String options) {
-        Log.e("第三方分享","facebook分享"+options);
+    public void inAppShare(String uuid, String options)
+    {
 
     }
-//获取广告配置表
+
     @JavascriptInterface
-    public void getAppConfig(String uuid, String options) {
-        Log.e("获取广告配置表","getBannerConfig");
-        AdConfigUtlis.getBannerConfigEvents(webview,uuid);
+    public void thirdPartyShare(String uuid, String options)
+    {
+        Log.e("第三方分享", "facebook分享" + options);
+
+    }
+
+    //获取广告配置表
+    @JavascriptInterface
+    public void getAppConfig(String uuid, String options)
+    {
+        Log.e("获取广告配置表", "getBannerConfig");
+        AdConfigUtlis.getBannerConfigEvents(webview, uuid);
     }
 
 
     @JavascriptInterface
-    public void goMyFragment(String uuid, String options) {
-         TgaSdk.listener.goMyFragemnt(context);
+    public void goMyFragment(String uuid, String options)
+    {
+        TgaSdk.listener.goMyFragemnt(context);
     }
 
 
     @JavascriptInterface
-    public String checkEvent(String uuid,String options) {
+    public String checkEvent(String uuid, String options)
+    {
         return TgaAdSdkUtils.checkEvent(uuid);
     }
 
     @JavascriptInterface
-    public void releaseEvent(String uuid,String options) {
+    public void releaseEvent(String uuid, String options)
+    {
         TgaAdSdkUtils.releaseEvent(uuid);
     }
 
     @JavascriptInterface
-    public void releaseAllEvents(String uuid,String options) {
+    public void releaseAllEvents(String uuid, String options)
+    {
         TgaAdSdkUtils.clearCaches();
     }
+
     //调起app端登录界面
     @JavascriptInterface
-    public void goLogin(String uuid, String options) {
-        Log.e("去登陆","options="+options);
-        if ( TgaSdk.gameCenterCallback!=null){
+    public void goLogin(String uuid, String options)
+    {
+        Log.e("去登陆", "options=" + options);
+        if (TgaSdk.gameCenterCallback != null)
+        {
             TgaSdk.gameCenterCallback.openUserLogin(uuid);
         }
     }
+
     //设置游戏中心页状态栏颜色
     @JavascriptInterface
-    public void statusBarColor(String uuid, String options) {
-        Log.e("游戏中心页状态栏颜色","options="+options);
+    public void statusBarColor(String uuid, String options)
+    {
+        Log.e("游戏中心页状态栏颜色", "options=" + options);
 //        String colorString="#"+options;
 //        HomeActivity.tv_stuasbar.setBackgroundColor(Color.parseColor(colorString));
     }
 
-    public void test() {
-        this.apploving.showAd(UUID.randomUUID().toString().replace("-",""), "fullscreen");
+    public void test()
+    {
+//        this.apploving.showAd(UUID.randomUUID().toString().replace("-",""), "fullscreen");
     }
 
     @JavascriptInterface
-    public void tryFlushEvents(String uuid, String options) {
+    public void tryFlushEvents(String uuid, String options)
+    {
         Log.d("javascriptInterface", "tryFlushEvents " + uuid + " " + options);
         TgaAdSdkUtils.flushAllEvents(webview);
     }
 
-    public static String getNumber(String str){
+    public static String getNumber(String str)
+    {
         // 控制正则表达式的匹配行为的参数(小数)
         Pattern p = Pattern.compile("(\\d+\\.\\d+)");
         //Matcher类的构造方法也是私有的,不能随意创建,只能通过Pattern.matcher(CharSequence input)方法得到该类的实例.
         Matcher m = p.matcher(str);
         //m.find用来判断该字符串中是否含有与"(\\d+\\.\\d+)"相匹配的子串
-        if (m.find()) {
+        if (m.find())
+        {
             //如果有相匹配的,则判断是否为null操作
             //group()中的参数：0表示匹配整个正则，1表示匹配第一个括号的正则,2表示匹配第二个正则,在这只有一个括号,即1和0是一样的
             str = m.group(1) == null ? "" : m.group(1);
-        } else {
+        } else
+        {
             //如果匹配不到小数，就进行整数匹配
             p = Pattern.compile("(\\d+)");
             m = p.matcher(str);
-            if (m.find()) {
+            if (m.find())
+            {
                 //如果有整数相匹配
                 str = m.group(1) == null ? "" : m.group(1);
-            } else {
+            } else
+            {
                 //如果没有小数和整数相匹配,即字符串中没有整数和小数，就设为空
                 str = "";
             }
@@ -385,6 +457,39 @@ public class JavaScriptinterface{
         return str;
     }
 
+    @JavascriptInterface
+    public void getUserParam(String uuid, String options)
+    {
+        String retStr = "";
+        JSONObject param = TgaSdk.urlParam.get("user");
+        if (param != null)
+        {
+            retStr = param.toString();
+        }
+        try
+        {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("uuid", uuid);
+            jsonObject.put("data", retStr);
+            webview.post(new AdConfigUtlis.ScriptCodeRunnable(AdConfigUtlis.toJavaScriptCode("null", jsonObject.toString()), webview));
+        }catch (Exception e) {e.printStackTrace();}
+    }
 
-
+    @JavascriptInterface
+    public void getAppParam(String uuid, String options)
+    {
+        String retStr = "";
+        JSONObject param = TgaSdk.urlParam.get("app");
+        if (param != null)
+        {
+            retStr = param.toString();
+        }
+        try
+        {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("uuid", uuid);
+            jsonObject.put("data", retStr);
+            webview.post(new AdConfigUtlis.ScriptCodeRunnable(AdConfigUtlis.toJavaScriptCode("null", jsonObject.toString()), webview));
+        }catch (Exception e) {e.printStackTrace();}
+    }
 }

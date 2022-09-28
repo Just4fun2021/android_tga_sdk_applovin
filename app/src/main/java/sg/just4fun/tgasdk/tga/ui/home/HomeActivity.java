@@ -31,6 +31,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.ads.h5.H5AdsWebViewClient;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lzy.okgo.OkGo;
@@ -276,14 +277,26 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
 //                            } catch (Exception e) {
 //                                e.printStackTrace();
 //                            }
-                            if (pag == 0) {
-                                url = url + "&lang=" + lang;
-                            }
-                            Log.e(TGA, "lang=" + lang + "   url=" + url);
-                            initWebView(webView);
-                            Log.e(TGA, "地址" + url);
-                            webView.loadUrl(url);
-            add_view.setWebViewClient(new WebViewClient() {
+//            if (pag == 0) {
+//                url = url + "&lang=" + lang;
+//            }
+//            Log.e(TGA, "lang=" + lang + "   url=" + url);
+            if (pag == 0)
+            {
+                JSONObject param = TgaSdk.urlParam.get("app");
+                if (param != null)
+                {
+                    try
+                    {
+                        param.put("lang", lang);
+                    }catch (Exception e) {e.printStackTrace();}
+                }
+            }
+
+            initWebView(webView);
+            Log.e(TGA, "地址" + url);
+            webView.loadUrl(url);
+            WebViewClient pubWebViewClient = new WebViewClient() {
                 @Override
                 public void onPageStarted(WebView view, String url, Bitmap favicon) {
                     super.onPageStarted(view, url, favicon);
@@ -338,10 +351,16 @@ public class HomeActivity extends AppCompatActivity implements TGACallback.Share
                 alertDialog.dismiss();
             }*/
 
-            });
+            };
 
 
 //google ads
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+            {
+                H5AdsWebViewClient h5AdsWebViewClient = new H5AdsWebViewClient(HomeActivity.this, webView);
+                h5AdsWebViewClient.setDelegateWebViewClient(pubWebViewClient);
+                webView.setWebViewClient(h5AdsWebViewClient);
+            }
 //            h5AdsWebViewClient = new H5AdsWebViewClient(this, webView);
 //            webView.setWebViewClient(h5AdsWebViewClient);
 //
